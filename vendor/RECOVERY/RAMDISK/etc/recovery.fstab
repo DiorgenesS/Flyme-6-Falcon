@@ -1,0 +1,13 @@
+#	mount_point	fstype
+
+		
+/boot	emmc	/dev/block/platform/msm_sdcc.1/by-name/boot
+/cache	ext4	/dev/block/platform/msm_sdcc.1/by-name/cache
+/data	f2fs	/dev/block/platform/msm_sdcc.1/by-name/userdata
+/firmware	ext4	/dev/block/platform/msm_sdcc.1/by-name/modem
+/recovery	emmc	/dev/block/platform/msm_sdcc.1/by-name/recovery
+/misc	emmc	/dev/block/platform/msm_sdcc.1/by-name/misc
+/system	ext4	/dev/block/platform/msm_sdcc.1/by-name/system
+
+		
+/usb-otg	auto	/dev/block/sda1
