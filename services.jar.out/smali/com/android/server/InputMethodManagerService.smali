@@ -5059,6 +5059,10 @@
     move-exception v7
 
     .line 1880
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->showFlymeImeSwitcherNotificationIfNeeded()V
+
+    :cond_flyme_0
+
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 1879
@@ -5071,11 +5075,11 @@
     :try_start_2
     iget-boolean v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationShown:Z
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_flyme_0
 
     iget-object v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_flyme_0
 
     iget-object v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
