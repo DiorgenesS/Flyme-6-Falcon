@@ -9,6 +9,6 @@ base_addr=0x00000000
 kernel_offset=0x00008000
 ramdisk_offset=0x01000000
 tags_offset=0x00000100
-cmd_line='androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags'
+cmd_line='androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.selinux=permissive'
 board=""
 format=gzip
