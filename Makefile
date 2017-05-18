@@ -40,14 +40,29 @@ vendor_modify_images := boot
 # The default value is app or pri-app which not need to configure.
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_dirs := vendor/operator/app
+vendor_remove_dirs := addon.d tts
 
 ##############################################################################
 # The value decides the file which you want to remove in the vendor directory for the ota package.
 # The default value is nothing.
 # You can configure the file name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_files := bin/zchgd
+vendor_remove_files := recovery-from-boot.bak \
+                       bin/bugreport \
+                       etc/build-manifest.xml \
+                       etc/CHANGELOG-CM.txt \
+                       etc/CHANGES.txt \
+                       etc/thermal-engine-thea.conf \
+                       etc/thermal-engine-titan.conf \
+                       lib/libjni_eglfence.so \
+                       lib/libjni_filtershow_filters.so \
+                       lib/libjni_jpegstream.so librsjni.so \
+                       lib/libjni_jpegutil.so \
+                       lib/libjni_latinime.so \
+                       lib/libjni_terminal.so \
+                       lib/libjni_tinyplanet.so \
+                       lib/libttscompat.so \
+                       lib/libttspico.so
 
 ##############################################################################
 # The value decides the vendor apk which you want to save in the vendor directory for the ota package.
@@ -94,7 +109,7 @@ vendor_modify_jars := framework org.cyanogenmod.platform services telephony-comm
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-#board_remove_apps := LogReport
+board_remove_apps := LogReport OperaMax Tag
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
