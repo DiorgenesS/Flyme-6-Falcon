@@ -59,7 +59,7 @@
     <bool name="config_goToSleepOnButtonPressTheaterMode">true</bool>
     <bool name="config_supportLongPressPowerWhenNonInteractive">false</bool>
     <bool name="config_supportAutoRotation">true</bool>
-    <bool name="config_allowAllRotations">false</bool>
+    <bool name="config_allowAllRotations">true</bool>
     <bool name="config_reverseDefaultRotation">false</bool>
     <bool name="config_lidControlsSleep">true</bool>
     <bool name="config_deskDockEnablesAccelerometer">true</bool>
@@ -76,7 +76,7 @@
     <bool name="config_ledCanPulse">true</bool>
     <bool name="config_disableMenuKeyInLockScreen">false</bool>
     <bool name="config_enableLockBeforeUnlockScreen">false</bool>
-    <bool name="config_enableLockScreenRotation">true</bool>
+    <bool name="config_enableLockScreenRotation">false</bool>
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
     <bool name="config_enableTranslucentDecor">true</bool>
     <bool name="config_hotswapCapable">true</bool>
