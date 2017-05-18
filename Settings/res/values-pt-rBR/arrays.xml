@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mc_custom_time_picker_lunar_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="mc_custom_time_picker_lunar_month">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Maio</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </string-array>
+    <string-array name="timezone_filters">
+        <item>América</item>
+        <item>Europa</item>
+        <item>África</item>
+        <item>Ásia</item>
+        <item>Austrália</item>
+        <item>Oceano Pacífico</item>
+        <item>Todos</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 mins</item>
+        <item>10 min.</item>
+        <item>30 mins</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nunca</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min.</item>
+        <item>10 minutos</item>
+        <item>30 min.</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Imediatamente</item>
+        <item>5 segundos</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 min</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 min</item>
+        <item>30 min</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>Pequeno</item>
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Extra grande</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Muito lento</item>
+        <item>Lento</item>
+        <item>Normal</item>
+        <item>Rápido</item>
+        <item>Mais rápido</item>
+        <item>Muito rápido</item>
+        <item>Rápido</item>
+        <item>Muito Rápida</item>
+        <item>Mais rápido</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Muito baixo</item>
+        <item>Baixo</item>
+        <item>Normal</item>
+        <item>Alto</item>
+        <item>Muito alto</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Verificando...</item>
+        <item>Conectando...</item>
+        <item>Autenticando...</item>
+        <item>Obtendo endereço IP...</item>
+        <item>Conectado</item>
+        <item>Suspenso</item>
+        <item>Desconectando...</item>
+        <item>Desconectado</item>
+        <item>Falhou</item>
+        <item>Bloqueado</item>
+        <item>Evitar conexões ruins temporariamente</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Verificando...</item>
+        <item>Conectando %1$s…</item>
+        <item>Autenticando via %1$s…</item>
+        <item>Obtendo endereço IP de %1$s…</item>
+        <item>Conectado à %1$s</item>
+        <item>Suspenso</item>
+        <item>Desconectando de %1$s...</item>
+        <item>Desconectado</item>
+        <item>Falhou</item>
+        <item>Bloqueados</item>
+        <item>Evitar temporariamente conexões ruins</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Botão</item>
+        <item>PIN do dispositivo de mesmo nível</item>
+        <item>PIN deste dispositivo</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Conectado</item>
+        <item>Convidado</item>
+        <item>Falhou</item>
+        <item>Disponível</item>
+        <item>Fora do alcance</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 mins</item>
+        <item>5 min.</item>
+        <item>1 hora</item>
+        <item>Nunca expirar</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Fraco</item>
+        <item>Razoável</item>
+        <item>Bom</item>
+        <item>Forte</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Quando a tela apagar</item>
+        <item>Somente quando conectado</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Sempre</item>
+        <item>Somente quando conectado</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="data_usage_data_range">
+        <item>Últimos 30 dias</item>
+        <item>Definir o ciclo de uso ...</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Auto</item>
+        <item>5 GHz apenas</item>
+        <item>2.4 GHz somente</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Tempo de uso</item>
+        <item>Última vez que utilizou</item>
+        <item>Nome do app</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>Nenhum</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nenhuma</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Estático</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Nenhum</item>
+        <item>Manual</item>
+        <item>Auto configuração de proxy</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nenhum</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ou CHAP</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>sHRPD</item>
+        <item>Não especificado</item>
+    </string-array>
+    <string-array name="mvno_type_entries">
+        <item>Nenhum</item>
+        <item>SPN</item>
+        <item>IMSI</item>
+        <item>GID</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Armazenamento interno do dispositivo</item>
+        <item>SD card removível</item>
+        <item>Deixar o sistema decidir</item>
+    </string-array>
+    <string-array name="app_ops_categories">
+        <item>Localização</item>
+        <item>Pessoal</item>
+        <item>Mensagem</item>
+        <item>Mídia</item>
+        <item>Dispositivo</item>
+    </string-array>
+    <string-array name="app_ops_summaries">
+        <item>Localização geral</item>
+        <item>Localização exata</item>
+        <item>GPS</item>
+        <item>Vibrar</item>
+        <item>Ler contatos</item>
+        <item>Modificar contatos</item>
+        <item>Ler registro de chamadas</item>
+        <item>Modificar registro de ligações</item>
+        <item>Ler calendário</item>
+        <item>Modificar calendário</item>
+        <item>Verificar Wi-Fi</item>
+        <item>Notificações</item>
+        <item>Verificar redes móveis</item>
+        <item>Discar</item>
+        <item>Ler SMS</item>
+        <item>Escrever SMS</item>
+        <item>Receber SMS</item>
+        <item>Receber SMS de emergência</item>
+        <item>Receber MMS</item>
+        <item>Receber WAP push</item>
+        <item>Enviar SMS</item>
+        <item>Ler SMS ICC</item>
+        <item>Escrever SMS ICC</item>
+        <item>Modificar definições</item>
+        <item>Desenhar na parte superior</item>
+        <item>Acessar notificações</item>
+        <item>Câmera</item>
+        <item>Gravar áudio</item>
+        <item>Tocar áudio</item>
+        <item>Ler área de transferência</item>
+        <item>Modificar o conteúdo da área de transferência</item>
+        <item>botões de mídia</item>
+        <item>áudio de atenção</item>
+        <item>Volume máximo</item>
+        <item>Volume de voz</item>
+        <item>Volume do toque</item>
+        <item>volume de mídia</item>
+        <item>volume do alarme</item>
+        <item>Volume de notificação</item>
+        <item>volume do Bluetooth</item>
+        <item>manter ativo</item>
+        <item>Localização de monitor</item>
+        <item>monitorar localização (alto consuno de energia)</item>
+        <item>obter estatísticas de uso</item>
+        <item>microfone com som/mudo</item>
+        <item>mídia do projeto</item>
+        <item>ativar VPN</item>
+    </string-array>
+    <string-array name="app_ops_labels">
+        <item>Localização</item>
+        <item>Localização</item>
+        <item>Localização</item>
+        <item>Vibrar</item>
+        <item>Ler contatos</item>
+        <item>Editar contatos</item>
+        <item>Ler registro de chamadas</item>
+        <item>Modificar registro de chamadas</item>
+        <item>Ler calendário</item>
+        <item>Modificar calendário</item>
+        <item>Localização</item>
+        <item>Publicar notificação</item>
+        <item>Localização</item>
+        <item>Discar</item>
+        <item>Ler SMS/MMS</item>
+        <item>Escrever SMS/MMS</item>
+        <item>Receber SMS/MMS</item>
+        <item>Receber SMS/MMS</item>
+        <item>Receber SMS/MMS</item>
+        <item>Receber SMS/MMS</item>
+        <item>Enviar SMS/MMS</item>
+        <item>Ler SMS/MMS</item>
+        <item>Escrever SMS/MMS</item>
+        <item>Modificar definições</item>
+        <item>Desenhar no topo</item>
+        <item>Notificações de acesso</item>
+        <item>Câmera</item>
+        <item>Gravar áudio</item>
+        <item>Reproduzir áudio</item>
+        <item>Ler área de transferência</item>
+        <item>Modificar área de transferência</item>
+        <item>Teclas de mídias</item>
+        <item>Frequência</item>
+        <item>Volume principal</item>
+        <item>Volume da voz</item>
+        <item>Volume do toque</item>
+        <item>Volume da mídia</item>
+        <item>Volume do alarme</item>
+        <item>Volume de notificação</item>
+        <item>Volume Bluetooth</item>
+        <item>Manter ativo</item>
+        <item>Localização</item>
+        <item>Localização</item>
+        <item>Obter estatísticas de uso</item>
+        <item>Mudo/ Microfone com som</item>
+        <item>Projeto de Mídia</item>
+        <item>Ativar VPN</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Curto</item>
+        <item>Médio</item>
+        <item>Longo</item>
+    </string-array>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>Predefinição</item>
+        <item>Sans-serif</item>
+        <item>Sans-serif condensado</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>Casuais</item>
+        <item>Cursiva</item>
+        <item>Letras minúsculas</item>
+    </string-array>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>Minúsculo</item>
+        <item>Pequeno</item>
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Extra grande</item>
+    </string-array>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>Padrão</item>
+        <item>Nenhum</item>
+        <item>Esboço</item>
+        <item>Sombra</item>
+        <item>Protuberância</item>
+        <item>Deprimido</item>
+    </string-array>
+    <string-array name="captioning_opacity_selector_titles">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="captioning_preset_selector_titles">
+        <item>Utilizar aplicativo padrão</item>
+        <item>Branco no preto</item>
+        <item>Preto no branco</item>
+        <item>Amarelo no preto</item>
+        <item>Amarelo no azul</item>
+        <item>Personalizado</item>
+    </string-array>
+    <string-array name="select_logd_size_titles">
+        <item>64K</item>
+        <item>256K</item>
+        <item>1M</item>
+        <item>4M</item>
+        <item>16 MB</item>
+    </string-array>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>64K</item>
+        <item>256K</item>
+        <item>1M</item>
+    </string-array>
+    <string-array name="select_logd_size_summaries">
+        <item>64K por cada log de buffer</item>
+        <item>256K por registro de buffer</item>
+        <item>1M por cada log de buffer</item>
+        <item>4M por log de buffer</item>
+        <item>16M por log de buffer</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nunca verificar</item>
+        <item>Verificar conteúdo DRM somente</item>
+        <item>Verificar sempre</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nunca use a verificação HDCP</item>
+        <item>Utilizar HDCP somente para verificar conteúdo DRM</item>
+        <item>Sempre utilizar verificação HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animação zoom 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Escala de animação 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Desligar animação</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animação zoom de 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animação desligada</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animação zoom de 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Nenhum</item>
+        <item>720x480 mdpi</item>
+        <item>720x480 mdpi (seguro)</item>
+        <item>1280x720 tvdpi</item>
+        <item>1280x720 tvdpi (seguro)</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1920x1080 xhdpi (seguro)</item>
+        <item>1280x720 tvdpi e 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Nenhum</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Invoke stack on glGetError</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_entries">
+        <item>Deslig.</item>
+        <item>Pinte de azul a área de recorte não retangular</item>
+        <item>Highlight tested drawing commands in green</item>
+    </string-array>
+    <string-array name="track_frame_time_entries">
+        <item>Fechar</item>
+        <item>Mostrar na tela como barras</item>
+        <item>Em adb shell dumpsys gfxinfo</item>
+    </string-array>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>Desligado</item>
+        <item>Show overdraw areas</item>
+        <item>Mostrar áreas para Deuteranomalia</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Limite padrão</item>
+        <item>Sem processos em segundo plano</item>
+        <item>No máximo um processo</item>
+        <item>No máximo 2 processos</item>
+        <item>Pelo menos 3 processos</item>
+        <item>Ao menos 4 processos</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>VPN PPTP</item>
+        <item>L2TP/IPSec VPN com chaves pré-compartilhadas</item>
+        <item>VPN L2TP/IPSec com certificados</item>
+        <item>VPN IPSec com chaves pré-compartilhadas e autenticação Xauth</item>
+        <item>VPN IPSec com certificados e autenticação Xauth</item>
+        <item>VPN IPSec com certificados e autenticação híbrida</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Desconectado</item>
+        <item>Iniciando...</item>
+        <item>Conectando...</item>
+        <item>Conectado</item>
+        <item>Expirou</item>
+        <item>Falhou</item>
+        <item>Reconectando...</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Perguntar</item>
+        <item>Nunca permitir</item>
+        <item>Perguntar sempre</item>
+    </string-array>
+    <string-array name="ram_states">
+        <item>Normal</item>
+        <item>Moderado</item>
+        <item>Baixo</item>
+        <item>Crítico</item>
+    </string-array>
+    <string-array name="entries_zen_mode">
+        <item>Deslig.</item>
+        <item>Interrupções limitadas</item>
+        <item>Zero interrupções</item>
+    </string-array>
+    <string-array name="proc_stats_memory_states">
+        <item>Normal</item>
+        <item>Moderado</item>
+        <item>Baixo</item>
+        <item>Crítico</item>
+    </string-array>
+    <string-array name="proc_stats_process_states">
+        <item>Residente</item>
+        <item>Principais atividades</item>
+        <item>Importante (primeiro plano)</item>
+        <item>Importante (segundo plano)</item>
+        <item>Backup</item>
+        <item>Peso-pesado</item>
+        <item>Serviço (em execução)</item>
+        <item>Serviço (reiniciando)</item>
+        <item>Receptor</item>
+        <item>Tela inicial</item>
+        <item>Última atividade</item>
+        <item>Em cache (atividade)</item>
+        <item>Em cache (cliente ativo)</item>
+        <item>Cache (vazia)</item>
+    </string-array>
+    <string-array name="color_picker">
+        <item>Verde-azulado</item>
+        <item>Blue</item>
+        <item>Índigo</item>
+        <item>Roxo</item>
+        <item>Rosa</item>
+        <item>Vermelho</item>
+    </string-array>
+    <string-array name="sim_slot">
+        <item>(não especificado)</item>
+        <item>Slot SIM 1</item>
+        <item>SIM Slot 2</item>
+    </string-array>
+    <string-array name="vpn_states_ext_mtpd_exit">
+        <item>Erro do sistema</item>
+        <item>Erro de rede</item>
+        <item>Erro de protocolo</item>
+        <item>Falha no desafio L2pt</item>
+        <item>Usuário solicitado</item>
+        <item>Desconectado pelo servidor. Verifique o nome do usuário e a senha</item>
+        <item>O protocolo não é compatível</item>
+        <item>Falha ao obter endereço do servidor</item>
+        <item>Falha ao conectar ao servidor (serviço VPN não suportado pelo servidor)</item>
+    </string-array>
+    <string-array name="vpn_states_ext_pppd_exit">
+        <item>Erro fatal no PPP</item>
+        <item>Erro relacionado com o parâmetro de opção PPP</item>
+        <item>Deve ter acesso root para executar pppd</item>
+        <item>Sem suporte kernel</item>
+        <item>Pedido do usuário</item>
+        <item>Falha ao bloquear arquivo do dispositivo</item>
+        <item>Falha ao abrir arquivo do dispositivo</item>
+        <item>Falhou</item>
+        <item>Falhou</item>
+        <item>Falha na negociação de autenticação</item>
+        <item>O servidor recusou-se a autenticar. Ligação finalizada</item>
+        <item>Conexão encerrada devido à falha de atividade.</item>
+        <item>Tempo da conexão excedido</item>
+        <item>Falhou</item>
+        <item>O servidor não responde</item>
+        <item>Erro desconhecido</item>
+        <item>Loopback detectado. Ligação terminada</item>
+        <item>Falhou</item>
+        <item>Falha na autenticação: verifique o nome de usuário e a senha</item>
+        <item>Limite de tráfego excedido</item>
+        <item>Falhou</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_click_entries">
+        <item>Desligar</item>
+        <item>Voltar</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_doubleclick_entries">
+        <item>Nenhum</item>
+        <item>Puxar a tela para baixo</item>
+        <item>Iniciar barra de notificações</item>
+        <item>Tela bloqueada</item>
+        <item>Abrir Multitasking</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_long_entries">
+        <item>Desligar</item>
+        <item>Mover</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_up_entries">
+        <item>Fechar</item>
+        <item>Voltar a tela principal</item>
+        <item>Tela bloqueada</item>
+        <item>Finalizar processo atual</item>
+        <item>Iniciar gerenciador de tarefas</item>
+        <item>Abrir menu</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_down_entries">
+        <item>Nenhum</item>
+        <item>Expandir a barra de notificação</item>
+        <item>Baixar tela</item>
+        <item>Tela bloqueada</item>
+        <item>Encerrar o processo atual</item>
+    </string-array>
+    <string-array name="smart_touch_behavior_left_right_entries">
+        <item>Nenhum</item>
+        <item>Alternar entre tarefas</item>
+    </string-array>
+    <string-array name="home_key_behavior_entries">
+        <item>Ativar Smart Voice</item>
+        <item>Desligar a tela</item>
+    </string-array>
+    <string-array name="wakeupType_entries">
+        <item>Duplo clique</item>
+        <item>Deslize para cima (utilizando mais energia)</item>
+    </string-array>
+    <string-array name="batteryMode_entries">
+        <item>Economia de energia</item>
+        <item>Equilibrado</item>
+        <item>Performance</item>
+    </string-array>
+    <string-array name="blur_effect_entries">
+        <item>Alto</item>
+        <item>Médio</item>
+        <item>Baixo</item>
+    </string-array>
+    <string-array name="entries_meizu_app_font_size">
+        <item>Pequeno</item>
+        <item>Padrão</item>
+        <item>Médio</item>
+        <item>Grande</item>
+        <item>Enorme</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_simple_mrvl">
+        <item>2G somente</item>
+        <item>3G preferencial</item>
+        <item>4G primeiro</item>
+    </string-array>
+    <string-array name="preferred_network_mode_options_cmcc">
+        <item>4G/3G/2G (auto)</item>
+        <item>3G/2G (auto)</item>
+    </string-array>
+    <string-array name="keyboard_back_behavior_entries">
+        <item>Recolher teclado</item>
+        <item>Fechar o teclado e retornar</item>
+    </string-array>
+    <string-array name="app_standby_permission">
+        <item>Permitir plano de fundo em execução</item>
+        <item>Desativar operação em standby</item>
+    </string-array>
+    <string-array name="app_wakeup_permission">
+        <item>Avisos programados</item>
+        <item>Despertador inteligente</item>
+        <item>Desligar despertador</item>
+    </string-array>
+    <string-array name="display_mode_entries">
+        <item>Modo adaptativo</item>
+        <item>Modo padrão</item>
+        <item>Modo fotografia</item>
+        <item>Modo colorido</item>
+    </string-array>
+    <string-array name="knock_control_entries">
+        <item>Puxe a barra de notificações para baixo</item>
+        <item>Captura da tela</item>
+        <item>Liberar memória</item>
+        <item>mudar para o último aplicativo</item>
+        <item>Desligar tela</item>
+    </string-array>
+    <string-array name="install_outside_app_entries">
+        <item>Abrir dica de risco</item>
+        <item>Fechar dica de risco</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries_flyme">
+        <item>Animação desabilitada</item>
+        <item>Animação de escala 0.5x</item>
+        <item>Animação de escala 0.75x</item>
+        <item>Animação de escala 1x</item>
+        <item>Animação de escala 1.5x</item>
+        <item>Animação de escala 2x</item>
+        <item>Animação escala 5x</item>
+        <item>Animação de escala 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries_flyme">
+        <item>Animação desativada</item>
+        <item>Animação de escala 0.5x</item>
+        <item>Animação de escala 0.75x</item>
+        <item>Animação de escala 1x</item>
+        <item>Animação de escala 1.5x</item>
+        <item>Animação de escala 2x</item>
+        <item>Animação de escala 5x</item>
+        <item>Animação de escala 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries_flyme">
+        <item>Animação desativada</item>
+        <item>Animação de escala 0.5x</item>
+        <item>Animação de escala 0.75x</item>
+        <item>Animação escala 1x</item>
+        <item>Animação escala 1.5x</item>
+        <item>animação de escala 2x</item>
+        <item>Animação de escala 5x</item>
+        <item>Animação de escala 10x</item>
+    </string-array>
+    <string-array name="network_use_entry">
+        <item>Somente rede local</item>
+        <item>Rede Local + Roaming</item>
+    </string-array>
+</resources>

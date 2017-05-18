@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">Você está a %1$d passo (s) de entrar no modo de programação</item>
+        <item quantity="one">Você está a %1$d passo (s) de entrar no modo de programação</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">A senha deve conter pelo menos %d letras.</item>
+        <item quantity="one">A senha deve conter pelo menos uma letra.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">A senha deve conter pelo menos %d letras minúsculas.</item>
+        <item quantity="one">A senha deve conter pelo menos uma letra minúscula.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Senha deve conter pelo menos %d letras maiúsculas.</item>
+        <item quantity="one">Senha deve conter pelo menos uma letra maiúscula</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">A senha deve conter ao menos %d números.</item>
+        <item quantity="one">Senha deve conter pelo menos 1 dígito numérico.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Senha deve conter pelo menos %d símbolos especiais.</item>
+        <item quantity="one">A senha deve conter pelo menos 1 símbolo especial.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">A senha deve conter pelo menos %d caracteres que não sejam letras.</item>
+        <item quantity="one">A senha deve conter pelo menos um caracter especial</item>
+    </plurals>
+    <plurals name="wrong_pin_code">
+        <item quantity="other">PIN do SIM incorreto, você tem mais %d tentativa(s) restante(s)</item>
+        <item quantity="one">PIN do SIM incorreto, você tem %d tentativa(s) restante(s) antes de contatar a operadora para desbloquear</item>
+    </plurals>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">%d aplicação consegue ler notificações</item>
+        <item quantity="one">%d aplicação consegue ler notificações</item>
+    </plurals>
+    <plurals name="manage_condition_providers_summary_nonzero">
+        <item quantity="other">%d aplicativo fornece condições</item>
+        <item quantity="one">%d aplicativo fornece condições</item>
+    </plurals>
+    <plurals name="mz_fp_management_count">
+        <item quantity="other">%1$d impressão(ões) digital(is) capturada(s)</item>
+        <item quantity="one">%1$d impressão(ões) digital(is) capturada(s)</item>
+    </plurals>
+</resources>
