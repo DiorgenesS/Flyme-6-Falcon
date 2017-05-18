@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mz_min_close_handle_underlap">55.0dip</dimen>
+</resources>
