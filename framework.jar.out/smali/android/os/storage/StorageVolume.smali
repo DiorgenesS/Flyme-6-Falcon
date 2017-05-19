@@ -548,6 +548,65 @@
     return-object v0
 .end method
 
+.method public getFatVolumeId()I
+    .locals 5
+
+    .prologue
+    const/4 v4, -0x1
+
+    .line 203
+    iget-object v1, p0, Landroid/os/storage/StorageVolume;->mFsUuid:Ljava/lang/String;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Landroid/os/storage/StorageVolume;->mFsUuid:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/16 v2, 0x9
+
+    if-eq v1, v2, :cond_1
+
+    .line 204
+    :cond_0
+    return v4
+
+    .line 207
+    :cond_1
+    :try_start_0
+    iget-object v1, p0, Landroid/os/storage/StorageVolume;->mFsUuid:Ljava/lang/String;
+
+    const-string/jumbo v2, "-"
+
+    const-string/jumbo v3, ""
+
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/16 v2, 0x10
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-wide v2
+
+    long-to-int v1, v2
+
+    return v1
+
+    .line 208
+    :catch_0
+    move-exception v0
+
+    .line 209
+    .local v0, "e":Ljava/lang/NumberFormatException;
+    return v4
+.end method
+
 .method public getId()Ljava/lang/String;
     .locals 1
 
