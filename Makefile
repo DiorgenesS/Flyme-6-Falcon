@@ -69,7 +69,7 @@ vendor_remove_files := recovery-from-boot.bak \
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService com.qualcomm.location com.qualcomm.services.location HTMLViewer KeyChain PicoTts PrintSpooler qcrilmsgtunnel Stk telresources TimeService UserDictionaryProvider webview \
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService com.qualcomm.location com.qualcomm.services.location HTMLViewer KeyChain PrintSpooler qcrilmsgtunnel Stk telresources TimeService UserDictionaryProvider webview \
                      AudioFX BackupRestoreConfirmation CMAudioService CMSettingsProvider DefaultContainerService ExternalStorageProvider FMRadio FusedLocation InputDevices ProxyHandler Screencast SharedStorageBackup Shell Snap StatementService
 
 ##############################################################################
@@ -109,7 +109,7 @@ vendor_modify_jars := framework org.cyanogenmod.platform services telephony-comm
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-board_remove_apps := LogReport OperaMax Tag
+board_remove_apps := LogReport NfcNci OperaMax Tag
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
