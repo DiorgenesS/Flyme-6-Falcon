@@ -2567,6 +2567,10 @@ Isso ajuda a proteger dados em dispositivos perdidos ou roubados."</string>
     <string name="mock_location_app">Selecione o aplicativo de informações de localização</string>
     <string name="mock_location_app_not_set">Nenhum aplicativo de localização definido</string>
     <string name="mock_location_app_set">Aplicativo de simulação de localização: %1$s</string>
+    <string name="usb_use_power_only">Fonte de alimentação</string>
+    <string name="usb_use_power_only_desc">Carregar o outro dispositivo conectado</string>
+    <string name="usb_use_MIDI">MIDI</string>
+    <string name="usb_use_MIDI_desc">Usar dispositivo para entrada de MIDI</string>
     <string name="bluetooth_access_contact_call_history">Acessar aos contatos e ao histórico de chamadas</string>
     <string name="bt_waiting">Aguarde</string>
     <string name="ok">OK</string>
