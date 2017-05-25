@@ -30097,7 +30097,7 @@
     return-void
 .end method
 
-.method public updateBootProgress_cm(ILandroid/content/pm/ApplicationInfo;II)V
+.method public updateBootProgress_extend(ILandroid/content/pm/ApplicationInfo;II)V
     .locals 7
     .param p1, "stage"    # I
     .param p2, "optimizedApp"    # Landroid/content/pm/ApplicationInfo;
