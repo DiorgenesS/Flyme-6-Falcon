@@ -155,15 +155,16 @@ board_modify_apps := Settings SystemUI TeleService
 # You should configure the property according to your device and your ID with replace the "Nexus-6P_Unofficial".
 override_property += \
     ro.flyme.romer=dio \
-    ro.product.model_romer=falcon_dio
+    ro.product.model_romer=falcon_dio \
+    persist.adb.notify=0
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
 # The default value is nothing.
 # You can add the property name in the value from the build.prop.
 #-----------------------------------------------------------------------------
-# remove_property += \
-#     dev.defaultwallpaper
+remove_property += \
+    ro.build.selinux
 
 ##############################################################################
 # Defines whether uses assertions in /META-INF/com/google/android/updater-script of the OTA package.
