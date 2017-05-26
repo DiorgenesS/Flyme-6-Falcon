@@ -8,6 +8,7 @@ def ModifyBegin(edify):
             edify.script[i] = '''assert(getprop("ro.product.device") == "xt1031" || getprop("ro.build.product") == "xt1031" || getprop("ro.product.device") == "xt1032" || getprop("ro.build.product") == "xt1032" || getprop("ro.product.device") == "xt1033" || getprop("ro.build.product") == "xt1033" || getprop("ro.product.device") == "xt1034" || getprop("ro.build.product") == "xt1034" || getprop("ro.product.device") == "falcon_umts" || getprop("ro.build.product") == "falcon_umts" || getprop("ro.product.device") == "falcon_umtsds" || getprop("ro.build.product") == "falcon_umtsds" || getprop("ro.product.device") == "falcon_cdma" || getprop("ro.build.product") == "falcon_cdma" || getprop("ro.product.device") == "falcon_retuaws" || getprop("ro.build.product") == "falcon_retuaws" || getprop("ro.product.device") == "falcon" || getprop("ro.build.product") == "falcon" || getprop("ro.product.device") == "falcon_gpe" || getprop("ro.build.product") == "falcon_gpe" || abort("This package is for device: xt1031,xt1032,xt1033,xt1034,falcon_umts,falcon_umtsds,falcon_cdma,falcon_retuaws,falcon,falcon_gpe; this device is " + getprop("ro.product.device") + "."););
 assert(getprop("ro.bootloader") == "0x4118" || getprop("ro.bootloader") == "0x4119" || getprop("ro.bootloader") == "0x411A" || abort("This package supports bootloader(s): 0x4118, 0x4119, 0x411A; this device has bootloader " + getprop("ro.bootloader") + "."););
 unmount("/system");
+unmount("/data");
 ui_print("===============================================");
 ui_print("     Flyme 6 International for Moto G 2013     ");
 ui_print("===============================================");
@@ -23,7 +24,7 @@ ui_print("===============================================");'''
 def ModifyCommand(edify):
     for i in xrange(len(edify.script)):
         if "package_extract_dir(" in edify.script[i] and "recovery" in edify.script[i]:
-            edify.script[i] = 'ui_print("Installing system...");'
+            edify.script[i] = 'run_program("/sbin/busybox", "mount", "/data");\nui_print("Installing system...");'
 
 
 def AddPrompt(edify):

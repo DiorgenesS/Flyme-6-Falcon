@@ -1,0 +1,6 @@
+symlink("/data/system_data/app/AppCenterIntl", "/system/app/AppCenterIntl");
+symlink("/data/system_data/priv-app/Browser", "/system/priv-app/Browser");
+symlink("/data/system_data/priv-app/Email", "/system/priv-app/Email");
+symlink("/data/system_data/priv-app/Music", "/system/priv-app/Music");
+symlink("/data/system_data/priv-app/Video", "/system/priv-app/Video");
+unmount("/data");
