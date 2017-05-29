@@ -24,9 +24,9 @@
     <item type="dimen" name="config_screen_magnification_scaling_threshold">0.3</item>
     <dimen name="toast_y_offset">64.0dip</dimen>
     <dimen name="status_bar_height">24.0dip</dimen>
-    <dimen name="navigation_bar_height">48.0dip</dimen>
-    <dimen name="navigation_bar_height_landscape">48.0dip</dimen>
-    <dimen name="navigation_bar_width">48.0dip</dimen>
+    <dimen name="navigation_bar_height">44.0dip</dimen>
+    <dimen name="navigation_bar_height_landscape">44.0dip</dimen>
+    <dimen name="navigation_bar_width">44.0dip</dimen>
     <dimen name="status_bar_icon_size">24.0dip</dimen>
     <dimen name="status_bar_content_number_size">48.0sp</dimen>
     <dimen name="status_bar_edge_ignore">5.0dip</dimen>
