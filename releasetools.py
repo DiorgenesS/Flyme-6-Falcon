@@ -16,7 +16,7 @@ ui_print("            By Dio_S @XDADevelopers            ");
 ui_print("===============================================");
 ui_print("===============================================");
 ui_print("DEVICE: Moto G - Falcon                        ");
-ui_print("FLYME 6 VERSION: 6.7.5.19                      ");
+ui_print("FLYME 6 VERSION: 6.7.6.5                       ");
 ui_print("ANDROID VERSION: 6.0.1                         ");
 ui_print("===============================================");'''
 
