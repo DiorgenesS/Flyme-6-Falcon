@@ -27,7 +27,6 @@
     .param p1, "this$1"    # Lcom/android/internal/app/MzResolverActivity$DetailListFrag;
 
     .prologue
-    .line 1920
     iput-object p1, p0, Lcom/android/internal/app/MzResolverActivity$DetailListFrag$3;->this$1:Lcom/android/internal/app/MzResolverActivity$DetailListFrag;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +52,6 @@
     .end annotation
 
     .prologue
-    .line 1925
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$DetailListFrag$3;->this$1:Lcom/android/internal/app/MzResolverActivity$DetailListFrag;
 
@@ -67,6 +65,5 @@
 
     invoke-virtual {v0, p3, v1, v2}, Lcom/android/internal/app/MzResolverActivity;->startSelected(IZZ)V
 
-    .line 1923
     return-void
 .end method

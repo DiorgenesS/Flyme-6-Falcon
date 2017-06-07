@@ -36,7 +36,6 @@
     .param p4, "val$name"    # Ljava/lang/String;
 
     .prologue
-    .line 226
     iput-object p1, p0, Landroid/text/util/UrlSpanHelper$3$1;->this$1:Landroid/text/util/UrlSpanHelper$3;
 
     iput-object p2, p0, Landroid/text/util/UrlSpanHelper$3$1;->val$mDialog:Landroid/app/AlertDialog;
@@ -56,7 +55,6 @@
     .locals 3
 
     .prologue
-    .line 228
     iget-object v0, p0, Landroid/text/util/UrlSpanHelper$3$1;->val$mDialog:Landroid/app/AlertDialog;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -69,7 +67,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, " - "
+    const-string v2, " - "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -87,6 +85,5 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 227
     return-void
 .end method

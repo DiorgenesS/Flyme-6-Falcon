@@ -23,7 +23,6 @@
     .locals 0
 
     .prologue
-    .line 2258
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +34,6 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 2263
     invoke-static {p1}, Landroid/app/FragmentManagerImpl$FlymeInjector;->overlayFlymeAnim(I)I
 
     move-result v0
@@ -52,12 +50,10 @@
     .param p0, "id"    # I
 
     .prologue
-    .line 2267
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
     if-nez v2, :cond_1
 
-    .line 2268
     new-instance v2, Landroid/util/SparseIntArray;
 
     const/4 v3, 0x4
@@ -66,27 +62,23 @@
 
     sput-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
-    .line 2269
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 2270
     .local v1, "res":Landroid/content/res/Resources;
     if-nez v1, :cond_0
 
-    .line 2271
     return p0
 
-    .line 2273
     :cond_0
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
-    const-string/jumbo v3, "fragment_open_enter"
+    const-string v3, "fragment_open_enter"
 
-    const-string/jumbo v4, "animator"
+    const-string v4, "animator"
 
-    const-string/jumbo v5, "android"
+    const-string v5, "android"
 
     invoke-virtual {v1, v3, v4, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -96,14 +88,13 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 2274
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
-    const-string/jumbo v3, "fragment_open_exit"
+    const-string v3, "fragment_open_exit"
 
-    const-string/jumbo v4, "animator"
+    const-string v4, "animator"
 
-    const-string/jumbo v5, "android"
+    const-string v5, "android"
 
     invoke-virtual {v1, v3, v4, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -113,14 +104,13 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 2275
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
-    const-string/jumbo v3, "fragment_close_enter"
+    const-string v3, "fragment_close_enter"
 
-    const-string/jumbo v4, "animator"
+    const-string v4, "animator"
 
-    const-string/jumbo v5, "android"
+    const-string v5, "android"
 
     invoke-virtual {v1, v3, v4, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -130,14 +120,13 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 2276
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
 
-    const-string/jumbo v3, "fragment_close_exit"
+    const-string v3, "fragment_close_exit"
 
-    const-string/jumbo v4, "animator"
+    const-string v4, "animator"
 
-    const-string/jumbo v5, "android"
+    const-string v5, "android"
 
     invoke-virtual {v1, v3, v4, v5}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
@@ -147,7 +136,6 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 2278
     .end local v1    # "res":Landroid/content/res/Resources;
     :cond_1
     sget-object v2, Landroid/app/FragmentManagerImpl$FlymeInjector;->mAnimArray:Landroid/util/SparseIntArray;
@@ -156,14 +144,11 @@
 
     move-result v0
 
-    .line 2279
     .local v0, "overlayId":I
     if-lez v0, :cond_2
 
-    .line 2280
     return v0
 
-    .line 2282
     :cond_2
     return p0
 .end method

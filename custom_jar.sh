@@ -3,12 +3,13 @@
 jarBaseName=$1
 tempSmaliDir=$2
 
-moveDirs=("android/accounts" "android/hardware" "android/printservice" "android/speech")
+dirs="android/app/ android/view/ android/widget/"
 
 if [ "$jarBaseName" = "framework" ];then
     echo ">>> in custom_jar $jarBaseName"
-    for dir_name in "${!moveDirs[@]}"
+    for dir in $dirs
     do
-        mv -v $tempSmaliDir/smali/${moveDirs[$dir_name]} $tempSmaliDir/smali_classes2/${moveDirs[$dir_name]}
+        echo ">>> in custom_jar moving $dir"
+        mv $tempSmaliDir/smali/$dir $tempSmaliDir/smali_classes2/$dir
     done
 fi

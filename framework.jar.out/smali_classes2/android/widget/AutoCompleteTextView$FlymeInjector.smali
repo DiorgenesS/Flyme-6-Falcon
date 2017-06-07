@@ -25,7 +25,6 @@
     .locals 0
 
     .prologue
-    .line 1385
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,6 @@
     .param p2, "position"    # I
 
     .prologue
-    .line 1395
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getPopup()Landroid/widget/ListPopupWindow;
 
     move-result-object v0
@@ -65,19 +63,16 @@
     .param p4, "defStyleRes"    # I
 
     .prologue
-    .line 1389
     new-instance v0, Landroid/widget/AutoCompleteTextView$FlymeInjector$DropdownPopup;
 
     invoke-direct {v0, p1, p2, p3, p4}, Landroid/widget/AutoCompleteTextView$FlymeInjector$DropdownPopup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     invoke-virtual {p0, v0}, Landroid/widget/AutoCompleteTextView;->flymSetFieldPopup(Landroid/widget/ListPopupWindow;)V
 
-    .line 1390
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/widget/AutoCompleteTextView;->mFlymeFilterComplete:Z
 
-    .line 1387
     return-void
 .end method
 
@@ -86,22 +81,18 @@
     .param p0, "tv"    # Landroid/widget/AutoCompleteTextView;
 
     .prologue
-    .line 1402
     iget-boolean v0, p0, Landroid/widget/AutoCompleteTextView;->mFlymeFilterComplete:Z
 
     if-eqz v0, :cond_0
 
-    .line 1403
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/widget/AutoCompleteTextView;->mIsFlymeMmsFirstFileter:Z
 
-    .line 1405
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/widget/AutoCompleteTextView;->mFlymeFilterComplete:Z
 
-    .line 1400
     return-void
 .end method

@@ -33,7 +33,6 @@
     .param p3, "val$value"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 188
     iput-object p1, p0, Landroid/text/util/UrlSpanHelper$2;->val$widget:Landroid/view/View;
 
     iput-object p2, p0, Landroid/text/util/UrlSpanHelper$2;->val$url:Ljava/lang/String;
@@ -53,26 +52,22 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 190
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$2;->val$widget:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 192
     .local v0, "context":Landroid/content/Context;
     packed-switch p2, :pswitch_data_0
 
-    .line 189
     :goto_0
     return-void
 
-    .line 194
     :pswitch_0
     new-instance v1, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.VIEW"
+    const-string v2, "android.intent.action.VIEW"
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$2;->val$url:Ljava/lang/String;
 
@@ -82,13 +77,11 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 195
     .local v1, "intent":Landroid/content/Intent;
     invoke-static {v0, v1}, Landroid/text/util/UrlSpanHelper;->-wrap10(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 198
     .end local v1    # "intent":Landroid/content/Intent;
     :pswitch_1
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$2;->val$value:Ljava/lang/CharSequence;
@@ -99,57 +92,49 @@
 
     goto :goto_0
 
-    .line 201
     :pswitch_2
     new-instance v1, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.INSERT"
+    const-string v2, "android.intent.action.INSERT"
 
     sget-object v3, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 202
     .restart local v1    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "email"
+    const-string v2, "email"
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$2;->val$value:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
-    .line 203
     invoke-static {v0, v1}, Landroid/text/util/UrlSpanHelper;->-wrap10(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 206
     .end local v1    # "intent":Landroid/content/Intent;
     :pswitch_3
     new-instance v1, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.INSERT_OR_EDIT"
+    const-string v2, "android.intent.action.INSERT_OR_EDIT"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 207
     .restart local v1    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "vnd.android.cursor.item/contact"
+    const-string v2, "vnd.android.cursor.item/contact"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 208
-    const-string/jumbo v2, "email"
+    const-string v2, "email"
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$2;->val$value:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
-    .line 210
     invoke-static {v0, v1}, Landroid/text/util/UrlSpanHelper;->-wrap10(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 192
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

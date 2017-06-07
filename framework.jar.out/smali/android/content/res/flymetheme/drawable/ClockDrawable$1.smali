@@ -25,7 +25,6 @@
     .param p2, "$anonymous0"    # Landroid/os/Looper;
 
     .prologue
-    .line 38
     iput-object p1, p0, Landroid/content/res/flymetheme/drawable/ClockDrawable$1;->this$0:Landroid/content/res/flymetheme/drawable/ClockDrawable;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -40,7 +39,6 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 41
     iget v0, p1, Landroid/os/Message;->what:I
 
     invoke-static {}, Landroid/content/res/flymetheme/drawable/ClockDrawable;->-get0()I
@@ -49,7 +47,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 42
     iget-object v0, p0, Landroid/content/res/flymetheme/drawable/ClockDrawable$1;->this$0:Landroid/content/res/flymetheme/drawable/ClockDrawable;
 
     invoke-virtual {v0}, Landroid/content/res/flymetheme/drawable/ClockDrawable;->isVisible()Z
@@ -58,14 +55,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 43
     new-instance v0, Landroid/content/res/flymetheme/drawable/ClockDrawable$1$1;
 
     invoke-direct {v0, p0}, Landroid/content/res/flymetheme/drawable/ClockDrawable$1$1;-><init>(Landroid/content/res/flymetheme/drawable/ClockDrawable$1;)V
 
     invoke-virtual {p0, v0}, Landroid/content/res/flymetheme/drawable/ClockDrawable$1;->post(Ljava/lang/Runnable;)Z
 
-    .line 40
     :cond_0
     return-void
 .end method

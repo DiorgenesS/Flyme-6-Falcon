@@ -8,7 +8,6 @@
     .locals 0
 
     .prologue
-    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,39 +24,32 @@
     .end annotation
 
     .prologue
-    .line 29
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
     move-result-object v2
 
-    .line 31
     .local v2, "xmlPullParser":Lorg/xmlpull/v1/XmlPullParser;
-    const-string/jumbo v3, "UTF-8"
+    const-string v3, "UTF-8"
 
     invoke-interface {v2, p0, v3}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/InputStream;Ljava/lang/String;)V
 
-    .line 33
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v1
 
-    .line 34
     .local v1, "eventType":I
     new-instance v0, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;
 
     invoke-direct {v0}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;-><init>()V
 
-    .line 35
     .local v0, "configInfo":Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;
     :goto_0
     const/4 v3, 0x1
 
     if-eq v1, v3, :cond_3
 
-    .line 36
     packed-switch v1, :pswitch_data_0
 
-    .line 53
     :cond_0
     :goto_1
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -66,13 +58,12 @@
 
     goto :goto_0
 
-    .line 39
     :pswitch_0
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    const-string/jumbo v4, "IconTransform"
+    const-string v4, "IconTransform"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -80,8 +71,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 41
-    const-string/jumbo v3, "filter_version"
+    const-string v3, "filter_version"
 
     const/4 v4, 0x0
 
@@ -93,9 +83,8 @@
 
     goto :goto_1
 
-    .line 39
     :cond_1
-    const-string/jumbo v4, "IconPosition"
+    const-string v4, "IconPosition"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -103,14 +92,12 @@
 
     if-eqz v4, :cond_2
 
-    .line 44
     invoke-static {v2, v0}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->readIconPosition(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;)V
 
     goto :goto_1
 
-    .line 39
     :cond_2
-    const-string/jumbo v4, "IconFilters"
+    const-string v4, "IconFilters"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -118,16 +105,13 @@
 
     if-eqz v3, :cond_0
 
-    .line 47
     invoke-static {v2, v0}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->readIconFilters(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;)V
 
     goto :goto_1
 
-    .line 55
     :cond_3
     return-object v0
 
-    .line 36
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_0
@@ -148,24 +132,21 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 92
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
 
-    .line 93
     .local v0, "eventType":I
     :goto_0
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 94
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    const-string/jumbo v1, "Filter"
+    const-string v1, "Filter"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -177,18 +158,15 @@
 
     if-eqz v1, :cond_1
 
-    .line 91
     :cond_0
     return-void
 
-    .line 95
     :cond_1
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_2
 
-    .line 96
-    const-string/jumbo v1, "Param"
+    const-string v1, "Param"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -198,27 +176,22 @@
 
     move-result v1
 
-    .line 95
     if-eqz v1, :cond_2
 
-    .line 97
-    const-string/jumbo v1, "name"
+    const-string v1, "name"
 
     invoke-interface {p0, v3, v1}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 98
-    const-string/jumbo v2, "value"
+    const-string v2, "value"
 
     invoke-interface {p0, v3, v2}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 97
     invoke-virtual {p1, v1, v2}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;->addParam(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 100
     :cond_2
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -239,24 +212,21 @@
     .end annotation
 
     .prologue
-    .line 78
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
 
-    .line 79
     .local v0, "eventType":I
     :goto_0
     const/4 v2, 0x1
 
     if-eq v0, v2, :cond_0
 
-    .line 80
     const/4 v2, 0x3
 
     if-ne v0, v2, :cond_1
 
-    const-string/jumbo v2, "IconFilters"
+    const-string v2, "IconFilters"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -268,18 +238,15 @@
 
     if-eqz v2, :cond_1
 
-    .line 77
     :cond_0
     return-void
 
-    .line 81
     :cond_1
     const/4 v2, 0x2
 
     if-ne v0, v2, :cond_2
 
-    .line 82
-    const-string/jumbo v2, "Filter"
+    const-string v2, "Filter"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -289,13 +256,11 @@
 
     move-result v2
 
-    .line 81
     if-eqz v2, :cond_2
 
-    .line 83
     new-instance v1, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
 
-    const-string/jumbo v2, "name"
+    const-string v2, "name"
 
     const/4 v3, 0x0
 
@@ -305,14 +270,11 @@
 
     invoke-direct {v1, v2}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;-><init>(Ljava/lang/String;)V
 
-    .line 84
     .local v1, "filter":Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
     invoke-static {p0, v1}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->readFilter(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;)V
 
-    .line 85
     invoke-virtual {p1, v1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;->addFilter(Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;)V
 
-    .line 87
     .end local v1    # "filter":Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
     :cond_2
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -336,24 +298,21 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 62
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
 
-    .line 63
     .local v0, "eventType":I
     :goto_0
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 64
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    const-string/jumbo v1, "IconPosition"
+    const-string v1, "IconPosition"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -365,18 +324,15 @@
 
     if-eqz v1, :cond_1
 
-    .line 61
     :cond_0
     return-void
 
-    .line 65
     :cond_1
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_2
 
-    .line 66
-    const-string/jumbo v1, "Point"
+    const-string v1, "Point"
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -386,13 +342,11 @@
 
     move-result v1
 
-    .line 65
     if-eqz v1, :cond_2
 
-    .line 67
     new-instance v1, Landroid/graphics/Point;
 
-    const-string/jumbo v2, "toX"
+    const-string v2, "toX"
 
     invoke-interface {p0, v4, v2}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -406,8 +360,7 @@
 
     move-result v2
 
-    .line 68
-    const-string/jumbo v3, "toY"
+    const-string v3, "toY"
 
     invoke-interface {p0, v4, v3}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -421,12 +374,10 @@
 
     move-result v3
 
-    .line 67
     invoke-direct {v1, v2, v3}, Landroid/graphics/Point;-><init>(II)V
 
     invoke-virtual {p1, v1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;->addPoint(Landroid/graphics/Point;)V
 
-    .line 70
     :cond_2
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -448,13 +399,11 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 159
-    const-string/jumbo v3, "Filter"
+    const-string v3, "Filter"
 
     invoke-interface {p0, v5, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 160
-    const-string/jumbo v3, "name"
+    const-string v3, "name"
 
     invoke-virtual {p1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;->getName()Ljava/lang/String;
 
@@ -462,12 +411,10 @@
 
     invoke-interface {p0, v5, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 161
     invoke-virtual {p1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;->getParams()Ljava/util/Map;
 
     move-result-object v2
 
-    .line 162
     .local v2, "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     if-eqz v2, :cond_0
 
@@ -480,7 +427,6 @@
     :cond_0
     return-void
 
-    .line 163
     :cond_1
     invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -504,13 +450,11 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 164
     .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;"
-    const-string/jumbo v3, "Param"
+    const-string v3, "Param"
 
     invoke-interface {p0, v5, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 165
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -525,21 +469,18 @@
 
     invoke-interface {p0, v5, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 166
-    const-string/jumbo v3, "Param"
+    const-string v3, "Param"
 
     invoke-interface {p0, v5, v3}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     goto :goto_0
 
-    .line 168
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;"
     :cond_2
-    const-string/jumbo v3, "Filter"
+    const-string v3, "Filter"
 
     invoke-interface {p0, v5, v3}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 158
     return-void
 .end method
 
@@ -556,12 +497,10 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 146
     invoke-virtual {p1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;->getFilters()Ljava/util/List;
 
     move-result-object v2
 
-    .line 147
     .local v2, "filters":Ljava/util/List;, "Ljava/util/List<Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;>;"
     if-eqz v2, :cond_0
 
@@ -574,13 +513,11 @@
     :cond_0
     return-void
 
-    .line 148
     :cond_1
-    const-string/jumbo v3, "IconFilters"
+    const-string v3, "IconFilters"
 
     invoke-interface {p0, v4, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 149
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -599,20 +536,17 @@
 
     check-cast v0, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
 
-    .line 150
     .local v0, "filter":Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
     invoke-static {p0, v0}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->writeFilterParam(Lorg/xmlpull/v1/XmlSerializer;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;)V
 
     goto :goto_0
 
-    .line 152
     .end local v0    # "filter":Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo$Filter;
     :cond_2
-    const-string/jumbo v3, "IconFilters"
+    const-string v3, "IconFilters"
 
     invoke-interface {p0, v4, v3}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 145
     return-void
 .end method
 
@@ -633,12 +567,10 @@
 
     const/4 v6, 0x0
 
-    .line 129
     invoke-virtual {p1}, Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;->getPoints()Ljava/util/List;
 
     move-result-object v2
 
-    .line 130
     .local v2, "points":Ljava/util/List;, "Ljava/util/List<Landroid/graphics/Point;>;"
     if-eqz v2, :cond_0
 
@@ -651,13 +583,11 @@
     :cond_0
     return-void
 
-    .line 131
     :cond_1
-    const-string/jumbo v3, "IconPosition"
+    const-string v3, "IconPosition"
 
     invoke-interface {p0, v6, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 132
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -668,7 +598,6 @@
 
     move-result-object v2
 
-    .line 133
     :cond_2
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -688,14 +617,12 @@
 
     check-cast v0, Landroid/graphics/Point;
 
-    .line 134
     .local v0, "point":Landroid/graphics/Point;
-    const-string/jumbo v3, "Point"
+    const-string v3, "Point"
 
     invoke-interface {p0, v6, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 135
-    const-string/jumbo v3, "toX"
+    const-string v3, "toX"
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -707,7 +634,7 @@
 
     move-result-object v4
 
-    const-string/jumbo v5, ""
+    const-string v5, ""
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -719,8 +646,7 @@
 
     invoke-interface {p0, v6, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 136
-    const-string/jumbo v3, "toY"
+    const-string v3, "toY"
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -732,7 +658,7 @@
 
     move-result-object v4
 
-    const-string/jumbo v5, ""
+    const-string v5, ""
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -744,21 +670,18 @@
 
     invoke-interface {p0, v6, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 137
-    const-string/jumbo v3, "Point"
+    const-string v3, "Point"
 
     invoke-interface {p0, v6, v3}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     goto :goto_0
 
-    .line 139
     .end local v0    # "point":Landroid/graphics/Point;
     :cond_3
-    const-string/jumbo v3, "IconPosition"
+    const-string v3, "IconPosition"
 
     invoke-interface {p0, v6, v3}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 128
     return-void
 .end method
 
@@ -768,20 +691,17 @@
     .param p1, "configInfo"    # Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;
 
     .prologue
-    .line 109
     :try_start_0
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
 
     move-result-object v1
 
-    .line 110
     .local v1, "serializer":Lorg/xmlpull/v1/XmlSerializer;
-    const-string/jumbo v2, "UTF-8"
+    const-string v2, "UTF-8"
 
     invoke-interface {v1, p0, v2}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
 
-    .line 111
-    const-string/jumbo v2, "UTF-8"
+    const-string v2, "UTF-8"
 
     const/4 v3, 0x1
 
@@ -791,56 +711,45 @@
 
     invoke-interface {v1, v2, v3}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
-    .line 112
-    const-string/jumbo v2, "IconTransform"
+    const-string v2, "IconTransform"
 
     const/4 v3, 0x0
 
     invoke-interface {v1, v3, v2}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 113
-    const-string/jumbo v2, "filter_version"
+    const-string v2, "filter_version"
 
-    const-string/jumbo v3, "1"
+    const-string v3, "1"
 
     const/4 v4, 0x0
 
     invoke-interface {v1, v4, v2, v3}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 114
     invoke-static {v1, p1}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->writeIconPosition(Lorg/xmlpull/v1/XmlSerializer;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;)V
 
-    .line 115
     invoke-static {v1, p1}, Landroid/content/res/flymetheme/iconfilter/utils/XmlUtils;->writeIconFilter(Lorg/xmlpull/v1/XmlSerializer;Landroid/content/res/flymetheme/iconfilter/bean/FilterConfigInfo;)V
 
-    .line 116
-    const-string/jumbo v2, "IconTransform"
+    const-string v2, "IconTransform"
 
     const/4 v3, 0x0
 
     invoke-interface {v1, v3, v2}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 117
     invoke-interface {v1}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
 
-    .line 118
     invoke-virtual {p0}, Ljava/io/OutputStream;->flush()V
 
-    .line 119
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 107
     .end local v1    # "serializer":Lorg/xmlpull/v1/XmlSerializer;
     :goto_0
     return-void
 
-    .line 120
     :catch_0
     move-exception v0
 
-    .line 121
     .local v0, "e":Ljava/io/IOException;
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 

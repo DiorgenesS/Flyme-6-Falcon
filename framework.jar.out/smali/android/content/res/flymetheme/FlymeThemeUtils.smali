@@ -103,75 +103,60 @@
 
     const/4 v3, 0x0
 
-    .line 23
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->FLYME_ICON_PACKAGE_NAME_LIST:Ljava/util/ArrayList;
 
-    .line 26
     sget-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->FLYME_ICON_PACKAGE_NAME_LIST:Ljava/util/ArrayList;
 
-    const-string/jumbo v1, "com.android.calendar"
+    const-string v1, "com.android.calendar"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 84
     new-array v0, v4, [Ljava/lang/String;
 
-    .line 130
-    const-string/jumbo v1, "com.rsupport.rs.activity.meizu"
+    const-string v1, "com.rsupport.rs.activity.meizu"
 
     aput-object v1, v0, v3
 
-    .line 84
     sput-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->WHITE_LIST:[Ljava/lang/String;
 
-    .line 136
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 137
-    const-string/jumbo v1, "com.meizu.watch"
+    const-string v1, "com.meizu.watch"
 
     aput-object v1, v0, v3
 
-    .line 138
-    const-string/jumbo v1, "com.meizu.speaker"
+    const-string v1, "com.meizu.speaker"
 
     aput-object v1, v0, v4
 
-    .line 139
-    const-string/jumbo v1, "com.meizu.meijia"
+    const-string v1, "com.meizu.meijia"
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    .line 140
-    const-string/jumbo v1, "com.meizu.router"
+    const-string v1, "com.meizu.router"
 
     const/4 v2, 0x3
 
     aput-object v1, v0, v2
 
-    .line 136
     sput-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->BLACK_LIST:[Ljava/lang/String;
 
-    .line 146
     new-array v0, v4, [Ljava/lang/String;
 
-    .line 147
-    const-string/jumbo v1, "com.meizu.smart."
+    const-string v1, "com.meizu.smart."
 
     aput-object v1, v0, v3
 
-    .line 146
     sput-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->BLACK_PREFIX_LIST:[Ljava/lang/String;
 
-    .line 8
     return-void
 .end method
 
@@ -179,7 +164,6 @@
     .locals 0
 
     .prologue
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -190,8 +174,7 @@
     .param p0, "resPackageName"    # Ljava/lang/String;
 
     .prologue
-    .line 70
-    const-string/jumbo v0, "android"
+    const-string v0, "android"
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -199,14 +182,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 71
     const/4 v0, 0x1
 
     return v0
 
-    .line 72
     :cond_0
-    const-string/jumbo v0, "flyme"
+    const-string v0, "flyme"
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -214,14 +195,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 73
     const/4 v0, 0x2
 
     return v0
 
-    .line 74
     :cond_1
-    const-string/jumbo v0, "mediatek"
+    const-string v0, "mediatek"
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -229,12 +208,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 75
     const/4 v0, 0x3
 
     return v0
 
-    .line 77
     :cond_2
     const/4 v0, 0x0
 
@@ -250,7 +227,6 @@
 
     const/4 v3, 0x0
 
-    .line 182
     sget-object v4, Landroid/content/res/flymetheme/FlymeThemeUtils;->BLACK_PREFIX_LIST:[Ljava/lang/String;
 
     array-length v5, v4
@@ -262,7 +238,6 @@
 
     aget-object v1, v4, v2
 
-    .line 183
     .local v1, "prefix":Ljava/lang/String;
     invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -270,16 +245,13 @@
 
     if-eqz v6, :cond_0
 
-    .line 184
     return v7
 
-    .line 182
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 188
     .end local v1    # "prefix":Ljava/lang/String;
     :cond_1
     sget-object v4, Landroid/content/res/flymetheme/FlymeThemeUtils;->BLACK_LIST:[Ljava/lang/String;
@@ -293,7 +265,6 @@
 
     aget-object v0, v4, v2
 
-    .line 189
     .local v0, "name":Ljava/lang/String;
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -301,16 +272,13 @@
 
     if-eqz v6, :cond_2
 
-    .line 190
     return v7
 
-    .line 188
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 194
     .end local v0    # "name":Ljava/lang/String;
     :cond_3
     return v3
@@ -323,23 +291,19 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 158
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 159
     return v2
 
-    .line 162
     :cond_0
     const/4 v1, 0x0
 
-    .line 163
     .local v1, "result":Z
-    const-string/jumbo v3, "com.meizu"
+    const-string v3, "com.meizu"
 
     invoke-virtual {p0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -347,28 +311,23 @@
 
     if-eqz v3, :cond_3
 
-    .line 164
     invoke-static {p0}, Landroid/content/res/flymetheme/FlymeThemeUtils;->isInBlackList(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 165
     const/4 v1, 0x0
 
-    .line 177
     :cond_1
     :goto_0
     return v1
 
-    .line 167
     :cond_2
     const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 170
     :cond_3
     sget-object v3, Landroid/content/res/flymetheme/FlymeThemeUtils;->WHITE_LIST:[Ljava/lang/String;
 
@@ -379,7 +338,6 @@
 
     aget-object v0, v3, v2
 
-    .line 171
     .local v0, "name":Ljava/lang/String;
     invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -387,13 +345,10 @@
 
     if-eqz v5, :cond_4
 
-    .line 172
     const/4 v1, 0x1
 
-    .line 173
     goto :goto_0
 
-    .line 170
     :cond_4
     add-int/lit8 v2, v2, 0x1
 
@@ -406,15 +361,13 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 221
     :try_start_0
     new-instance v0, Ljava/io/File;
 
-    const-string/jumbo v2, "/data/data/com.meizu.customizecenter/custom_flag/no_custom"
+    const-string v2, "/data/data/com.meizu.customizecenter/custom_flag/no_custom"
 
     invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 222
     .local v0, "custom":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
     :try_end_0
@@ -424,20 +377,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 223
     return v3
 
-    .line 225
     :cond_0
     const/4 v2, 0x1
 
     return v2
 
-    .line 226
     :catch_0
     move-exception v1
 
-    .line 227
     .local v1, "e":Ljava/lang/Exception;
     return v3
 .end method
@@ -446,7 +395,6 @@
     .locals 1
 
     .prologue
-    .line 208
     const/4 v0, 0x1
 
     return v0
@@ -456,7 +404,6 @@
     .locals 1
 
     .prologue
-    .line 200
     const/4 v0, 0x1
 
     return v0

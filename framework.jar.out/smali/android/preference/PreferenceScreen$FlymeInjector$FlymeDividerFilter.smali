@@ -27,13 +27,10 @@
     .param p1, "preferenceScreen"    # Landroid/preference/PreferenceScreen;
 
     .prologue
-    .line 309
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 310
     iput-object p1, p0, Landroid/preference/PreferenceScreen$FlymeInjector$FlymeDividerFilter;->mPreferenceScreen:Landroid/preference/PreferenceScreen;
 
-    .line 309
     return-void
 .end method
 
@@ -43,7 +40,6 @@
     .locals 1
 
     .prologue
-    .line 341
     const/4 v0, 0x0
 
     return v0
@@ -56,33 +52,27 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 320
     iget-object v3, p0, Landroid/preference/PreferenceScreen$FlymeInjector$FlymeDividerFilter;->mPreferenceScreen:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v3}, Landroid/preference/PreferenceScreen;->flymeGetFieldRootAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v1
 
-    .line 321
     .local v1, "rootAdapter":Landroid/widget/ListAdapter;
     if-eqz v1, :cond_5
 
-    .line 322
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
     move-result v2
 
-    .line 323
     .local v2, "size":I
     if-ltz p1, :cond_0
 
     if-lt p1, v2, :cond_1
 
-    .line 324
     :cond_0
     return v5
 
-    .line 327
     :cond_1
     instance-of v3, v1, Landroid/preference/PreferenceGroupAdapter;
 
@@ -90,10 +80,8 @@
 
     move-object v0, v1
 
-    .line 328
     check-cast v0, Landroid/preference/PreferenceGroupAdapter;
 
-    .line 329
     .local v0, "adapter":Landroid/preference/PreferenceGroupAdapter;
     add-int/lit8 v3, v2, -0x1
 
@@ -122,7 +110,6 @@
 
     if-nez v3, :cond_4
 
-    .line 330
     :cond_3
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
 
@@ -132,24 +119,19 @@
 
     move-result v3
 
-    .line 329
     if-nez v3, :cond_4
 
-    .line 331
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
 
     move-result-object v3
 
     instance-of v3, v3, Landroid/preference/PreferenceCategory;
 
-    .line 329
     if-eqz v3, :cond_5
 
-    .line 332
     :cond_4
     return v5
 
-    .line 336
     .end local v0    # "adapter":Landroid/preference/PreferenceGroupAdapter;
     .end local v2    # "size":I
     :cond_5
@@ -162,7 +144,6 @@
     .locals 1
 
     .prologue
-    .line 315
     const/4 v0, 0x0
 
     return v0

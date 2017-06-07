@@ -33,7 +33,6 @@
     .locals 0
 
     .prologue
-    .line 2423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,12 +43,10 @@
     .param p0, "imm"    # Landroid/view/inputmethod/InputMethodManager;
 
     .prologue
-    .line 2441
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getCurEditorInfo()Landroid/view/inputmethod/EditorInfo;
 
     move-result-object v1
 
-    .line 2444
     .local v1, "tba":Landroid/view/inputmethod/EditorInfo;
     iget v2, v1, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
@@ -59,7 +56,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 2445
     iget v2, v1, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     const/high16 v3, 0x2000000
@@ -68,20 +64,17 @@
 
     iput v2, v1, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
-    .line 2448
     :cond_0
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getPrivateImeOptionsMap()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 2449
     .local v0, "privateImeOptionsMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     iget-object v2, v1, Landroid/view/inputmethod/EditorInfo;->privateImeOptions:Ljava/lang/String;
 
     invoke-static {v2, v0}, Landroid/view/inputmethod/EditorInfo;->splitPrivateImeOptions(Ljava/lang/String;Ljava/util/Map;)Z
 
-    .line 2450
-    const-string/jumbo v2, "com.meizu.input.theme"
+    const-string v2, "com.meizu.input.theme"
 
     invoke-interface {v0, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -89,12 +82,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 2440
     :cond_1
     :goto_0
     return-void
 
-    .line 2452
     :cond_2
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getMzInputTheme()Ljava/lang/String;
 
@@ -106,8 +97,7 @@
 
     if-nez v2, :cond_1
 
-    .line 2454
-    const-string/jumbo v2, "com.meizu.input.theme"
+    const-string v2, "com.meizu.input.theme"
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getMzInputTheme()Ljava/lang/String;
 
@@ -115,7 +105,6 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2455
     invoke-static {v0}, Landroid/view/inputmethod/EditorInfo;->makePrivateImeOptions(Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v2
@@ -130,7 +119,6 @@
     .param p0, "imm"    # Landroid/view/inputmethod/InputMethodManager;
 
     .prologue
-    .line 2430
     new-instance v1, Landroid/view/inputmethod/InputMethodManager$FlymeInjector$FlymeHandler;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mMainLooper:Landroid/os/Looper;
@@ -139,38 +127,32 @@
 
     iput-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymeHandler:Landroid/os/Handler;
 
-    .line 2431
-    const-string/jumbo v1, "white"
+    const-string v1, "white"
 
     iput-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymeInputTheme:Ljava/lang/String;
 
-    .line 2432
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymeInputShown:Z
 
-    .line 2433
     new-instance v1, Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-direct {v1}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
     iput-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymeInputShownChangeListenerList:Ljava/util/List;
 
-    .line 2434
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     iput-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymePrivateImeOptionsMap:Ljava/util/Map;
 
-    .line 2436
-    const-string/jumbo v1, "input_method"
+    const-string v1, "input_method"
 
     invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 2437
     .local v0, "b":Landroid/os/IBinder;
     invoke-static {v0}, Lcom/android/internal/view/MzIInputMethodManagerProxy;->asInterfaceMz(Landroid/os/IBinder;)Lcom/android/internal/view/MzIInputMethodManager;
 
@@ -178,7 +160,6 @@
 
     iput-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mFlymeInputMethodManagerService:Lcom/android/internal/view/MzIInputMethodManager;
 
-    .line 2429
     return-void
 .end method
 
@@ -188,15 +169,12 @@
     .param p1, "forceNewFocus"    # Z
 
     .prologue
-    .line 2467
     iget v0, p0, Landroid/view/inputmethod/InputMethodManager;->mBindSequence:I
 
     if-gez v0, :cond_0
 
-    .line 2468
     const/4 p1, 0x1
 
-    .line 2470
     .end local p1    # "forceNewFocus":Z
     :cond_0
     return p1
@@ -207,7 +185,6 @@
     .param p0, "imm"    # Landroid/view/inputmethod/InputMethodManager;
 
     .prologue
-    .line 2461
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mServedView:Landroid/view/View;
 
     if-eqz v0, :cond_0
@@ -220,10 +197,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2462
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->finishInputLocked()V
 
-    .line 2459
     :cond_0
     return-void
 .end method

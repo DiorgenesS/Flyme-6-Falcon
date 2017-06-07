@@ -30,7 +30,6 @@
     .param p2, "val$delay"    # I
 
     .prologue
-    .line 7217
     iput-object p1, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     iput p2, p0, Landroid/app/Activity$TintBarInject$2;->val$delay:I
@@ -52,7 +51,6 @@
 
     const/4 v1, 0x0
 
-    .line 7220
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     invoke-static {v2}, Landroid/app/Activity$TintBarInject;->-get0(Landroid/app/Activity$TintBarInject;)Z
@@ -61,7 +59,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 7221
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     iget-object v3, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
@@ -81,7 +78,6 @@
     :goto_0
     invoke-static {v2, v3, v0}, Landroid/app/Activity$TintBarInject;->-wrap0(Landroid/app/Activity$TintBarInject;Landroid/view/View;Z)V
 
-    .line 7219
     :cond_0
     :goto_1
     return-void
@@ -89,16 +85,13 @@
     :cond_1
     move v0, v1
 
-    .line 7221
     goto :goto_0
 
-    .line 7223
     :cond_2
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     invoke-static {v2, v0}, Landroid/app/Activity$TintBarInject;->-set0(Landroid/app/Activity$TintBarInject;Z)Z
 
-    .line 7224
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     invoke-static {v2}, Landroid/app/Activity$TintBarInject;->-get1(Landroid/app/Activity$TintBarInject;)I
@@ -107,7 +100,6 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 7225
     iget-object v0, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     iget-object v1, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
@@ -130,7 +122,6 @@
 
     invoke-static {v0, v1, v2}, Landroid/app/Activity$TintBarInject;->-wrap1(Landroid/app/Activity$TintBarInject;Landroid/view/View;I)V
 
-    .line 7226
     iget-object v0, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     invoke-static {v0}, Landroid/app/Activity$TintBarInject;->-get4(Landroid/app/Activity$TintBarInject;)Landroid/view/Window;
@@ -145,7 +136,6 @@
 
     if-eq v0, v3, :cond_0
 
-    .line 7227
     iget-object v0, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     invoke-static {v0}, Landroid/app/Activity$TintBarInject;->-get1(Landroid/app/Activity$TintBarInject;)I
@@ -158,7 +148,6 @@
 
     goto :goto_1
 
-    .line 7230
     :cond_3
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
@@ -168,7 +157,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 7231
     iget-object v2, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;
 
     iget-object v3, p0, Landroid/app/Activity$TintBarInject$2;->this$1:Landroid/app/Activity$TintBarInject;

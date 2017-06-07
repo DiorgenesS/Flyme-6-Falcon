@@ -20678,7 +20678,6 @@
     return-void
 .end method
 
-
 .method handleShrinkMemory(I)V
     .locals 5
     .param p1, "level"    # I

@@ -347,12 +347,6 @@
 .method public abstract systemReady()V
 .end method
 
-.method public abstract showBootMessage(Ljava/lang/CharSequence;Z)V
-.end method
-
-.method public abstract updateBootProgress(ILandroid/content/pm/ApplicationInfo;II)V
-.end method
-
 .method public abstract userActivity()V
 .end method
 
@@ -360,4 +354,7 @@
 .end method
 
 .method public abstract windowTypeToLayerLw(I)I
+.end method
+
+.method public abstract showBootMessage(Ljava/lang/CharSequence;Z)V
 .end method

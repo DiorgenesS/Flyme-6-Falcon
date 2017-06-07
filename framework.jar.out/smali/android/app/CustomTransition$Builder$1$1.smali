@@ -30,7 +30,6 @@
     .param p2, "val$finalListener"    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     .prologue
-    .line 205
     iput-object p1, p0, Landroid/app/CustomTransition$Builder$1$1;->this$2:Landroid/app/CustomTransition$Builder$1;
 
     iput-object p2, p0, Landroid/app/CustomTransition$Builder$1$1;->val$finalListener:Landroid/app/ActivityOptions$OnAnimationStartedListener;
@@ -46,11 +45,9 @@
     .locals 1
 
     .prologue
-    .line 208
     iget-object v0, p0, Landroid/app/CustomTransition$Builder$1$1;->val$finalListener:Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     invoke-interface {v0}, Landroid/app/ActivityOptions$OnAnimationStartedListener;->onAnimationStarted()V
 
-    .line 207
     return-void
 .end method

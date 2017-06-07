@@ -30,16 +30,12 @@
     .param p2, "msgStringResId"    # I
 
     .prologue
-    .line 1382
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1383
     iput-object p1, p0, Landroid/app/WallpaperManager$FlymeInjector$FlymeChildrenModeToast;->mContext:Landroid/content/Context;
 
-    .line 1384
     iput p2, p0, Landroid/app/WallpaperManager$FlymeInjector$FlymeChildrenModeToast;->mResId:I
 
-    .line 1382
     return-void
 .end method
 
@@ -49,7 +45,6 @@
     .locals 3
 
     .prologue
-    .line 1389
     iget-object v0, p0, Landroid/app/WallpaperManager$FlymeInjector$FlymeChildrenModeToast;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Landroid/app/WallpaperManager$FlymeInjector$FlymeChildrenModeToast;->mContext:Landroid/content/Context;
@@ -72,6 +67,5 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1388
     return-void
 .end method

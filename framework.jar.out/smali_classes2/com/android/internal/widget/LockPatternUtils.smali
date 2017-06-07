@@ -360,19 +360,17 @@
 
     move-result-wide v2
 
-    .line 950
-    const-string/jumbo v1, "lockscreen.password_salt"
+    const-string v1, "lockscreen.password_salt"
 
-    invoke-virtual {p0, v1, v2, v3, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v1, v2, v3, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 951
-    const-string/jumbo v1, "LockPatternUtils"
+    const-string v1, "LockPatternUtils"
 
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "Initialized lock password salt for user: "
+    const-string v5, "Initialized lock password salt for user: "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -916,7 +914,6 @@
 
     return-object v4
 .end method
-
 .method public static patternToHash(Ljava/util/List;B)[B
     .locals 9
     .param p1, "gridSize"    # B
@@ -1197,7 +1194,6 @@
 
     goto :goto_0
 .end method
-
 .method public static stringToPattern(Ljava/lang/String;B)Ljava/util/List;
     .locals 6
     .param p0, "string"    # Ljava/lang/String;
@@ -1730,14 +1726,12 @@
 
     const/4 v1, 0x0
 
-    .line 456
-    const-string/jumbo v0, "lockscreen.password_type"
+    const-string v0, "lockscreen.password_type"
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {p0, v0, v2, v3, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v0, v2, v3, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 459
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
 
@@ -2120,20 +2114,16 @@
 
     if-eqz v6, :cond_0
 
-    .line 1157
-    const-string/jumbo v6, "lockscreen.lockoutattemptdeadline"
+    const-string v6, "lockscreen.lockoutattemptdeadline"
 
-    invoke-virtual {p0, v6, v8, v9, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v6, v8, v9, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1158
-    const-string/jumbo v6, "lockscreen.lockoutattempttimeoutmss"
+    const-string v6, "lockscreen.lockoutattempttimeoutmss"
 
-    invoke-virtual {p0, v6, v8, v9, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v6, v8, v9, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1159
     return-wide v8
 
-    .line 1162
     :cond_0
     add-long v6, v2, v4
 
@@ -2141,15 +2131,12 @@
 
     if-lez v6, :cond_1
 
-    .line 1164
     add-long v0, v2, v4
 
-    .line 1165
-    const-string/jumbo v6, "lockscreen.lockoutattemptdeadline"
+    const-string v6, "lockscreen.lockoutattemptdeadline"
 
-    invoke-virtual {p0, v6, v0, v1, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v6, v0, v1, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1168
     :cond_1
     return-wide v0
 .end method
@@ -3180,7 +3167,7 @@
 
     move/from16 v1, p4
 
-    invoke-virtual {v0, v5, v14, v15, v1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {v0, v5, v14, v15, v1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
     .line 750
     if-eqz v24, :cond_d
@@ -3734,34 +3721,28 @@
 
     if-nez v1, :cond_3
 
-    .line 528
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->clearEncryptionPassword()V
 
-    .line 535
     :cond_2
     :goto_1
-    const-string/jumbo v1, "lockscreen.patterneverchosen"
+    const-string v1, "lockscreen.patterneverchosen"
 
     const/4 v2, 0x1
 
     invoke-virtual {p0, v1, v2, p3}, Lcom/android/internal/widget/LockPatternUtils;->setBoolean(Ljava/lang/String;ZI)V
 
-    .line 537
-    const-string/jumbo v1, "lockscreen.password_type"
+    const-string v1, "lockscreen.password_type"
 
     const-wide/32 v2, 0x10000
 
-    invoke-virtual {p0, v1, v2, v3, p3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v1, v2, v3, p3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 539
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v2
 
-    .line 538
     const/high16 v1, 0x10000
 
-    .line 539
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -4021,12 +4002,10 @@
     .param p3, "userId"    # I
 
     .prologue
-    .line 1115
-    const-string/jumbo v0, "lock_pattern_size"
+    const-string v0, "lock_pattern_size"
 
-    invoke-virtual {p0, v0, p1, p2, p3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v0, p1, p2, p3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1114
     return-void
 .end method
 
@@ -4060,24 +4039,21 @@
 
     add-long v0, v2, v4
 
-    .line 1141
     .local v0, "deadline":J
-    const-string/jumbo v2, "lockscreen.lockoutattemptdeadline"
+    const-string v2, "lockscreen.lockoutattemptdeadline"
 
-    invoke-virtual {p0, v2, v0, v1, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v2, v0, v1, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1142
-    const-string/jumbo v2, "lockscreen.lockoutattempttimeoutmss"
+    const-string v2, "lockscreen.lockoutattempttimeoutmss"
 
     int-to-long v4, p2
 
-    invoke-virtual {p0, v2, v4, v5, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v2, v4, v5, p1}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
-    .line 1143
     return-wide v0
 .end method
 
-.method protected setLong(Ljava/lang/String;JI)V
+.method private setLong(Ljava/lang/String;JI)V
     .locals 4
     .param p1, "secureSettingKey"    # Ljava/lang/String;
     .param p2, "value"    # J
@@ -4646,6 +4622,79 @@
     return-object v4
 .end method
 
+.method public static patternToHash(Ljava/util/List;)[B
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lcom/android/internal/widget/LockPatternView$Cell;",
+            ">;)[B"
+        }
+    .end annotation
+
+    .prologue
+    .local p0, "pattern":Ljava/util/List;, "Ljava/util/List<Lcom/android/internal/widget/LockPatternView$Cell;>;"
+
+    const/4 v0, 0x3
+
+    invoke-static {p0, v0}, Lcom/android/internal/widget/LockPatternUtils;->patternToHash(Ljava/util/List;B)[B
+
+    move-result-object v1
+
+    return-object v1
+.end method
+
+.method public static patternToString(Ljava/util/List;)Ljava/lang/String;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lcom/android/internal/widget/LockPatternView$Cell;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .prologue
+    .local p0, "pattern":Ljava/util/List;, "Ljava/util/List<Lcom/android/internal/widget/LockPatternView$Cell;>;"
+    const/4 v0, 0x3
+
+    invoke-static {p0, v0}, Lcom/android/internal/widget/LockPatternUtils;->patternToString(Ljava/util/List;B)Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+.end method
+
+.method public static stringToPattern(Ljava/lang/String;)Ljava/util/List;
+    .locals 2
+    .param p0, "string"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/List",
+            "<",
+            "Lcom/android/internal/widget/LockPatternView$Cell;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v0, 0x3
+
+    invoke-static {p0, v0}, Lcom/android/internal/widget/LockPatternUtils;->stringToPattern(Ljava/lang/String;B)Ljava/util/List;
+
+    move-result-object v1
+
+    return-object v1
+.end method
+
 .method private saveFlymePasswordLength(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 6
     .param p1, "password"    # Ljava/lang/String;
@@ -4700,7 +4749,7 @@
 
     int-to-long v4, v3
 
-    invoke-virtual {p0, v2, v4, v5, p4}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
+    invoke-direct {p0, v2, v4, v5, p4}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;JI)V
 
     return-void
 

@@ -33,7 +33,6 @@
     .param p3, "val$openUri"    # Landroid/net/Uri;
 
     .prologue
-    .line 338
     iput-object p1, p0, Landroid/text/util/UrlSpanHelper$6;->val$widget:Landroid/view/View;
 
     iput-object p2, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
@@ -53,22 +52,18 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 340
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$6;->val$widget:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 342
     .local v0, "context":Landroid/content/Context;
     packed-switch p2, :pswitch_data_0
 
-    .line 339
     :goto_0
     return-void
 
-    .line 344
     :pswitch_0
     sget-object v2, Landroid/os/BuildExt;->CUSTOMIZE_CHINAMOBILE:Ljava/lang/Boolean;
 
@@ -78,7 +73,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 345
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$6;->val$widget:Landroid/view/View;
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
@@ -87,28 +81,25 @@
 
     goto :goto_0
 
-    .line 347
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.VIEW"
+    const-string v2, "android.intent.action.VIEW"
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$6;->val$openUri:Landroid/net/Uri;
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 348
     .local v1, "intent":Landroid/content/Intent;
     invoke-static {v0, v1}, Landroid/text/util/UrlSpanHelper;->-wrap10(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 352
     .end local v1    # "intent":Landroid/content/Intent;
     :pswitch_1
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
 
-    const-string/jumbo v3, "geo"
+    const-string v3, "geo"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -116,12 +107,11 @@
 
     if-eqz v2, :cond_1
 
-    .line 353
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
 
-    const-string/jumbo v4, "="
+    const-string v4, "="
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
@@ -139,15 +129,12 @@
 
     move-result-object v2
 
-    .line 354
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$6;->val$widget:Landroid/view/View;
 
-    .line 353
     invoke-static {v2, v3}, Landroid/text/util/UrlSpanHelper;->-wrap8(Ljava/lang/CharSequence;Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 356
     :cond_1
     iget-object v2, p0, Landroid/text/util/UrlSpanHelper$6;->val$url:Ljava/lang/String;
 
@@ -157,22 +144,19 @@
 
     goto :goto_0
 
-    .line 361
     :pswitch_2
     new-instance v1, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.INSERT_OR_EDIT"
+    const-string v2, "android.intent.action.INSERT_OR_EDIT"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 362
     .restart local v1    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "vnd.android.cursor.dir/bookmark"
+    const-string v2, "vnd.android.cursor.dir/bookmark"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 363
-    const-string/jumbo v2, "extra_url"
+    const-string v2, "extra_url"
 
     iget-object v3, p0, Landroid/text/util/UrlSpanHelper$6;->val$openUri:Landroid/net/Uri;
 
@@ -182,12 +166,10 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 364
     invoke-static {v0, v1}, Landroid/text/util/UrlSpanHelper;->-wrap10(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 342
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

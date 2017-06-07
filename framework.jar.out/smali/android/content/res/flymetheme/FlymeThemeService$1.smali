@@ -24,7 +24,6 @@
     .param p1, "this$0"    # Landroid/content/res/flymetheme/FlymeThemeService;
 
     .prologue
-    .line 53
     iput-object p1, p0, Landroid/content/res/flymetheme/FlymeThemeService$1;->this$0:Landroid/content/res/flymetheme/FlymeThemeService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +39,6 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 56
     iget-object v0, p0, Landroid/content/res/flymetheme/FlymeThemeService$1;->this$0:Landroid/content/res/flymetheme/FlymeThemeService;
 
     invoke-static {v0}, Landroid/content/res/flymetheme/FlymeThemeService;->-wrap0(Landroid/content/res/flymetheme/FlymeThemeService;)Z
@@ -49,7 +47,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "android.intent.action.SCREEN_OFF"
+    const-string v0, "android.intent.action.SCREEN_OFF"
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -61,25 +59,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 57
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 58
     iget-object v0, p0, Landroid/content/res/flymetheme/FlymeThemeService$1;->this$0:Landroid/content/res/flymetheme/FlymeThemeService;
 
     invoke-static {v0}, Landroid/content/res/flymetheme/FlymeThemeService;->-get1(Landroid/content/res/flymetheme/FlymeThemeService;)Landroid/content/Intent;
 
     move-result-object v0
 
-    const-string/jumbo v1, "com.meizu.customizecenter"
+    const-string v1, "com.meizu.customizecenter"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 59
     iget-object v0, p0, Landroid/content/res/flymetheme/FlymeThemeService$1;->this$0:Landroid/content/res/flymetheme/FlymeThemeService;
 
     invoke-static {v0}, Landroid/content/res/flymetheme/FlymeThemeService;->-get5(Landroid/content/res/flymetheme/FlymeThemeService;)Landroid/content/Context;
@@ -94,7 +89,6 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 60
     iget-object v0, p0, Landroid/content/res/flymetheme/FlymeThemeService$1;->this$0:Landroid/content/res/flymetheme/FlymeThemeService;
 
     invoke-static {v0}, Landroid/content/res/flymetheme/FlymeThemeService;->-get5(Landroid/content/res/flymetheme/FlymeThemeService;)Landroid/content/Context;
@@ -113,7 +107,6 @@
 
     invoke-static {v0, v1, v2, v3}, Landroid/provider/Settings$System;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
-    .line 55
     :cond_0
     return-void
 .end method

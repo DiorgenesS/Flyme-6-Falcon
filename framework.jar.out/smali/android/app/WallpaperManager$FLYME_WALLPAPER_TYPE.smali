@@ -40,10 +40,9 @@
 
     const/4 v2, 0x0
 
-    .line 1290
     new-instance v0, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
 
-    const-string/jumbo v1, "LAUNCHER"
+    const-string v1, "LAUNCHER"
 
     invoke-direct {v0, v1, v2}, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;-><init>(Ljava/lang/String;I)V
 
@@ -51,13 +50,12 @@
 
     new-instance v0, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
 
-    const-string/jumbo v1, "LOCK"
+    const-string v1, "LOCK"
 
     invoke-direct {v0, v1, v3}, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;->LOCK:Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
 
-    .line 1289
     const/4 v0, 0x2
 
     new-array v0, v0, [Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
@@ -79,7 +77,6 @@
     .locals 0
 
     .prologue
-    .line 1289
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -90,7 +87,6 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 1289
     const-class v0, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -106,7 +102,6 @@
     .locals 1
 
     .prologue
-    .line 1289
     sget-object v0, Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;->$VALUES:[Landroid/app/WallpaperManager$FLYME_WALLPAPER_TYPE;
 
     return-object v0

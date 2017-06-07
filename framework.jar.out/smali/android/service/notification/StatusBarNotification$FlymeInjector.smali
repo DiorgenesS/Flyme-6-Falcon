@@ -19,7 +19,6 @@
     .locals 0
 
     .prologue
-    .line 409
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,10 +29,8 @@
     .param p0, "src"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 436
     const/4 v8, 0x0
 
-    .line 438
     .local v8, "notification":Landroid/app/Notification;
     :try_start_0
     invoke-virtual {p0}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
@@ -49,13 +46,11 @@
     .local v8, "notification":Landroid/app/Notification;
     move-object v12, v8
 
-    .line 441
     .end local v8    # "notification":Landroid/app/Notification;
     .local v12, "notification":Landroid/app/Notification;
     :goto_0
     if-nez v12, :cond_0
 
-    .line 443
     :try_start_1
     new-instance v8, Landroid/app/Notification;
 
@@ -63,7 +58,6 @@
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 444
     .end local v12    # "notification":Landroid/app/Notification;
     .restart local v8    # "notification":Landroid/app/Notification;
     :try_start_2
@@ -77,7 +71,6 @@
     :try_end_2
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 448
     :goto_1
     new-instance v0, Landroid/service/notification/StatusBarNotification;
 
@@ -89,7 +82,6 @@
 
     move-result-object v2
 
-    .line 449
     invoke-virtual {p0}, Landroid/service/notification/StatusBarNotification;->getId()I
 
     move-result v3
@@ -118,10 +110,8 @@
 
     move-result-wide v10
 
-    .line 448
     invoke-direct/range {v0 .. v11}, Landroid/service/notification/StatusBarNotification;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IIILandroid/app/Notification;Landroid/os/UserHandle;J)V
 
-    .line 450
     .local v0, "sbn":Landroid/service/notification/StatusBarNotification;
     iget-object v1, p0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
@@ -131,10 +121,8 @@
 
     iput-object v1, v0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
-    .line 451
     return-object v0
 
-    .line 439
     .end local v0    # "sbn":Landroid/service/notification/StatusBarNotification;
     .local v8, "notification":Landroid/app/Notification;
     :catch_0
@@ -146,7 +134,6 @@
     .restart local v12    # "notification":Landroid/app/Notification;
     goto :goto_0
 
-    .line 445
     .end local v8    # "notification":Landroid/app/Notification;
     .end local v13    # "throwable":Ljava/lang/Throwable;
     :catch_1
@@ -183,7 +170,6 @@
     .param p1, "dest"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 430
     iget-object v0, p0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
     invoke-virtual {v0}, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;->copy()Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
@@ -192,7 +178,6 @@
 
     iput-object v0, p1, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
-    .line 431
     return-object p1
 .end method
 
@@ -201,14 +186,12 @@
     .param p0, "sbn"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 413
     new-instance v0, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
     invoke-direct {v0}, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;-><init>()V
 
     iput-object v0, p0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
-    .line 411
     return-void
 .end method
 
@@ -218,14 +201,12 @@
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
-    .line 419
     new-instance v0, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
     invoke-direct {v0, p1}, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;-><init>(Landroid/os/Parcel;)V
 
     iput-object v0, p0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
-    .line 417
     return-void
 .end method
 
@@ -236,11 +217,9 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 425
     iget-object v0, p0, Landroid/service/notification/StatusBarNotification;->mFlymeFilter:Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;
 
     invoke-virtual {v0, p1, p2}, Landroid/service/notification/StatusBarNotification$FlymeNotificationFilter;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 423
     return-void
 .end method

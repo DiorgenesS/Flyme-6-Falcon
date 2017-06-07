@@ -33,7 +33,6 @@
     .param p3, "val$listView"    # Landroid/widget/ListView;
 
     .prologue
-    .line 732
     iput-object p1, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->this$1:Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;
 
     iput-object p2, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->val$alert:Lcom/android/internal/app/AlertController;
@@ -51,16 +50,13 @@
     .param p2, "position"    # I
 
     .prologue
-    .line 747
     const/4 v0, 0x1
 
-    .line 748
     .local v0, "enabled":Z
     invoke-interface {p1, p2}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 749
     .local v1, "item":Ljava/lang/Object;
     if-eqz v1, :cond_0
 
@@ -68,7 +64,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 750
     iget-object v2, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->this$1:Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;
 
     invoke-static {v2}, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;->-get0(Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;)Lcom/android/internal/app/AlertController$AlertParams;
@@ -81,10 +76,8 @@
 
     move-result v2
 
-    .line 749
     if-eqz v2, :cond_0
 
-    .line 751
     iget-object v2, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->this$1:Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;
 
     invoke-static {v2}, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;->-get0(Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;)Lcom/android/internal/app/AlertController$AlertParams;
@@ -97,10 +90,8 @@
 
     move-result v2
 
-    .line 749
     if-eqz v2, :cond_0
 
-    .line 752
     check-cast v1, Lcom/android/internal/view/menu/MenuItemImpl;
 
     .end local v1    # "item":Ljava/lang/Object;
@@ -108,7 +99,6 @@
 
     move-result v0
 
-    .line 754
     .end local v0    # "enabled":Z
     :cond_0
     return v0
@@ -124,7 +114,6 @@
     .param p4, "id"    # J
 
     .prologue
-    .line 734
     iget-object v1, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->this$1:Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;
 
     invoke-static {v1}, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;->-get0(Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;)Lcom/android/internal/app/AlertController$AlertParams;
@@ -143,7 +132,6 @@
 
     invoke-interface {v1, v2, p3}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 739
     iget-object v1, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->val$listView:Landroid/widget/ListView;
 
     invoke-virtual {v1}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
@@ -154,7 +142,6 @@
 
     move-result v0
 
-    .line 740
     .local v0, "enabled":Z
     iget-object v1, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->this$1:Lcom/android/internal/app/AlertControllerExt$AlertParamsExt;
 
@@ -168,7 +155,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 741
     iget-object v1, p0, Lcom/android/internal/app/AlertControllerExt$AlertParamsExt$1;->val$alert:Lcom/android/internal/app/AlertController;
 
     iget-object v1, v1, Lcom/android/internal/app/AlertController;->mAlertExt:Lcom/android/internal/app/AlertControllerExt;
@@ -179,7 +165,6 @@
 
     invoke-interface {v1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 733
     :cond_0
     return-void
 .end method

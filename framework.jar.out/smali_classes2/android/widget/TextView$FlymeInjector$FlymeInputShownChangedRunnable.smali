@@ -30,16 +30,12 @@
     .param p2, "shown"    # Z
 
     .prologue
-    .line 10692
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10693
     iput-object p1, p0, Landroid/widget/TextView$FlymeInjector$FlymeInputShownChangedRunnable;->mInputShownChangeListener:Landroid/widget/TextView$FlymeInjector$MzInputShownChangeListener;
 
-    .line 10694
     iput-boolean p2, p0, Landroid/widget/TextView$FlymeInjector$FlymeInputShownChangedRunnable;->mShown:Z
 
-    .line 10692
     return-void
 .end method
 
@@ -49,13 +45,11 @@
     .locals 2
 
     .prologue
-    .line 10699
     iget-object v0, p0, Landroid/widget/TextView$FlymeInjector$FlymeInputShownChangedRunnable;->mInputShownChangeListener:Landroid/widget/TextView$FlymeInjector$MzInputShownChangeListener;
 
     iget-boolean v1, p0, Landroid/widget/TextView$FlymeInjector$FlymeInputShownChangedRunnable;->mShown:Z
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView$FlymeInjector$MzInputShownChangeListener;->onInputShownChanged(Z)V
 
-    .line 10698
     return-void
 .end method

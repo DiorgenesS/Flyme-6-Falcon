@@ -41,14 +41,11 @@
     .end annotation
 
     .prologue
-    .line 2435
     .local p1, "pageViews":Ljava/util/List;, "Ljava/util/List<Landroid/view/View;>;"
     invoke-direct {p0}, Lcom/android/internal/widget/PagerAdapter;-><init>()V
 
-    .line 2436
     iput-object p1, p0, Lcom/android/internal/app/MzResolverActivity$ViewPagerAdapter;->pageViews:Ljava/util/List;
 
-    .line 2434
     return-void
 .end method
 
@@ -61,7 +58,6 @@
     .param p3, "arg2"    # Ljava/lang/Object;
 
     .prologue
-    .line 2456
     check-cast p1, Lcom/android/internal/widget/ViewPager;
 
     .end local p1    # "arg0":Landroid/view/View;
@@ -75,7 +71,6 @@
 
     invoke-virtual {p1, v0}, Lcom/android/internal/widget/ViewPager;->removeView(Landroid/view/View;)V
 
-    .line 2455
     return-void
 .end method
 
@@ -83,7 +78,6 @@
     .locals 1
 
     .prologue
-    .line 2441
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$ViewPagerAdapter;->pageViews:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -98,7 +92,6 @@
     .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
-    .line 2451
     invoke-super {p0, p1}, Lcom/android/internal/widget/PagerAdapter;->getItemPosition(Ljava/lang/Object;)I
 
     move-result v0
@@ -112,7 +105,6 @@
     .param p2, "arg1"    # I
 
     .prologue
-    .line 2464
     check-cast p1, Lcom/android/internal/widget/ViewPager;
 
     .end local p1    # "arg0":Landroid/view/View;
@@ -126,7 +118,6 @@
 
     invoke-virtual {p1, v0}, Lcom/android/internal/widget/ViewPager;->addView(Landroid/view/View;)V
 
-    .line 2465
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$ViewPagerAdapter;->pageViews:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -142,7 +133,6 @@
     .param p2, "arg1"    # Ljava/lang/Object;
 
     .prologue
-    .line 2446
     if-ne p1, p2, :cond_0
 
     const/4 v0, 0x1

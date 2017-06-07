@@ -27,7 +27,6 @@
     .param p1, "this$0"    # Lcom/android/internal/app/AlertControllerExt;
 
     .prologue
-    .line 850
     iput-object p1, p0, Lcom/android/internal/app/AlertControllerExt$5;->this$0:Lcom/android/internal/app/AlertControllerExt;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +49,6 @@
     .param p9, "oldBottom"    # I
 
     .prologue
-    .line 853
     iget-object v0, p0, Lcom/android/internal/app/AlertControllerExt$5;->this$0:Lcom/android/internal/app/AlertControllerExt;
 
     move-object v1, p1
@@ -65,6 +63,5 @@
 
     invoke-static/range {v0 .. v5}, Lcom/android/internal/app/AlertControllerExt;->-wrap0(Lcom/android/internal/app/AlertControllerExt;Landroid/view/View;IIII)V
 
-    .line 852
     return-void
 .end method

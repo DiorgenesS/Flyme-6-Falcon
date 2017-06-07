@@ -38,19 +38,15 @@
     .param p5, "pOrigIntent"    # Landroid/content/Intent;
 
     .prologue
-    .line 905
     iput-object p1, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->this$0:Lcom/android/internal/app/MzResolverActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 907
     iput-object p2, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->ri:Landroid/content/pm/ResolveInfo;
 
-    .line 908
     iput-object p3, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->displayLabel:Ljava/lang/CharSequence;
 
-    .line 909
-    const-string/jumbo v0, "zh_CN"
+    const-string v0, "zh_CN"
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -66,14 +62,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 910
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->ri:Landroid/content/pm/ResolveInfo;
 
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.tencent.mm"
+    const-string v1, "com.tencent.mm"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -87,7 +82,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.tencent.mm.ui.tools.ShareImgUI"
+    const-string v1, "com.tencent.mm.ui.tools.ShareImgUI"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -95,7 +90,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 911
     invoke-virtual {p1}, Lcom/android/internal/app/MzResolverActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -108,18 +102,14 @@
 
     iput-object v0, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->displayLabel:Ljava/lang/CharSequence;
 
-    .line 918
     :cond_0
     :goto_0
     iput-object p4, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->extendedInfo:Ljava/lang/CharSequence;
 
-    .line 919
     iput-object p5, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->origIntent:Landroid/content/Intent;
 
-    .line 906
     return-void
 
-    .line 912
     :cond_1
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->ri:Landroid/content/pm/ResolveInfo;
 
@@ -127,7 +117,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.tencent.mm"
+    const-string v1, "com.tencent.mm"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -141,7 +131,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.tencent.mm.ui.tools.ShareToTimeLineUI"
+    const-string v1, "com.tencent.mm.ui.tools.ShareToTimeLineUI"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -149,7 +139,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 913
     invoke-virtual {p1}, Lcom/android/internal/app/MzResolverActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -164,7 +153,6 @@
 
     goto :goto_0
 
-    .line 914
     :cond_2
     iget-object v0, p0, Lcom/android/internal/app/MzResolverActivity$DisplayResolveInfo;->ri:Landroid/content/pm/ResolveInfo;
 
@@ -172,7 +160,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.sina.weibo"
+    const-string v1, "com.sina.weibo"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -186,7 +174,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-string/jumbo v1, "com.sina.weibo.composerinde.ComposerDispatchActivity"
+    const-string v1, "com.sina.weibo.composerinde.ComposerDispatchActivity"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -194,7 +182,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 915
     invoke-virtual {p1}, Lcom/android/internal/app/MzResolverActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0

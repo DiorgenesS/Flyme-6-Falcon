@@ -2144,7 +2144,6 @@
     return v0
 .end method
 
-
 .method public static isSystemTypeface(Landroid/graphics/Typeface;)Z
     .locals 1
     .param p0, "typeface"    # Landroid/graphics/Typeface;
