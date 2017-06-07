@@ -13158,7 +13158,6 @@
     .param p1, "n"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 2449
     invoke-virtual {p0}, Lcom/android/server/notification/NotificationManagerService;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -13167,6 +13166,5 @@
 
     invoke-static {v0, p1, v1}, Lcom/android/server/notification/CloudNotificationHelper;->callReplyIntent(Landroid/content/Context;Landroid/service/notification/StatusBarNotification;I)V
 
-    .line 2447
     return-void
 .end method

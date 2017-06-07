@@ -486,20 +486,26 @@
 
     sput-object v3, Lcom/android/server/power/ShutdownThread;->mAudioManager:Landroid/media/AudioManager;
 
+    .line 444
     sget-object v3, Lcom/android/server/power/ShutdownThread;->mAudioManager:Landroid/media/AudioManager;
 
+    .line 445
     const/4 v4, 0x3
 
+    .line 444
     invoke-virtual {v3, v8, v4, v7}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
 
+    .line 447
     invoke-static {}, Lcom/android/server/power/ShutdownThread;->checkAnimationFileExist()Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
+    .line 450
     invoke-virtual {v2, v9}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
+    .line 451
     invoke-virtual {v2}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v3
@@ -508,24 +514,20 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->setType(I)V
 
-    .line 453
     invoke-static {p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
 
-    .line 456
     :cond_2
     sget-object v3, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
 
     iput-object v2, v3, Lcom/android/server/power/ShutdownThread;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    .line 457
     sget-object v3, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
 
     iput-object p0, v3, Lcom/android/server/power/ShutdownThread;->mContext:Landroid/content/Context;
 
-    .line 458
     sget-object v4, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
 
-    const-string/jumbo v3, "power"
+    const-string v3, "power"
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

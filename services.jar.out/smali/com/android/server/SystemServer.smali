@@ -1630,30 +1630,28 @@
     :try_end_d
     .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_7
 
-    .line 624
     :goto_9
     :try_start_e
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
-    move-result-object v2
+    move-result-object v3
 
-    .line 625
-    const/4 v3, 0x1
+    invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    const/4 v4, 0x0
+    move-result-object v4
 
-    const/4 v5, 0x0
+    sget v7, Lcom/android/internal/R$string;->android_upgrading_starting_apps:I
 
-    const/4 v6, 0x0
+    invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v4
 
     const/4 v7, 0x0
 
-    .line 624
-    invoke-interface/range {v2 .. v7}, Landroid/app/IActivityManager;->updateBootProgress(ILandroid/content/pm/ApplicationInfo;IIZ)V
+    invoke-interface {v3, v4, v7}, Landroid/app/IActivityManager;->showBootMessage(Ljava/lang/CharSequence;Z)V
     :try_end_e
     .catch Landroid/os/RemoteException; {:try_start_e .. :try_end_e} :catch_40
 
-    .line 629
     :goto_a
     move-object/from16 v0, p0
 
@@ -2809,12 +2807,16 @@
     invoke-virtual {v3, v4}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
 
     :cond_1b
+
+    goto/16 :goto_flyme_0
+
     if-nez v56, :cond_1c
 
     if-eqz v51, :cond_31
 
     .end local v33    # "atlas":Lcom/android/server/AssetAtlasService;
     :cond_1c
+    :goto_flyme_0
     :goto_26
     if-nez v56, :cond_1d
 
@@ -2827,6 +2829,7 @@
     invoke-static {v3, v4}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
 
     :cond_1d
+
     invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -3142,15 +3145,6 @@
 
     .line 1060
     .local v82, "mmsService":Lcom/android/server/MmsServiceBroker;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v3, v111
-
-    move-object/from16 v4, v108
-
-    invoke-static {v0, v3, v4}, Lcom/android/server/SystemServer$FlymeInjector;->addFlymeServices(Lcom/android/server/SystemServer;Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wallpaper/WallpaperManagerService;)V
-
     :try_start_3b
     invoke-static/range {v65 .. v65}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -3248,6 +3242,15 @@
     .end local v80    # "method":Ljava/lang/reflect/Method;
     .end local v95    # "serverClazz":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
     :goto_2c
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v4, v111
+
+    move-object/from16 v5, v108
+
+    invoke-static {v0, v4, v5}, Lcom/android/server/SystemServer$FlymeInjector;->addFlymeServices(Lcom/android/server/SystemServer;Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wallpaper/WallpaperManagerService;)V
+
     :try_start_3c
     invoke-virtual/range {v105 .. v105}, Lcom/android/server/VibratorService;->systemReady()V
     :try_end_3c

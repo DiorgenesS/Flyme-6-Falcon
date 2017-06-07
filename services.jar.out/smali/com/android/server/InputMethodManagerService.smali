@@ -2344,14 +2344,11 @@
 
     if-eqz v3, :cond_5
 
-    .line 3682
-    invoke-direct {p0, v0}, Lcom/android/server/InputMethodManagerService;->publishImeSelectorCustomTile(Landroid/view/inputmethod/InputMethodInfo;)V
+    #invoke-direct {p0, v0}, Lcom/android/server/InputMethodManagerService;->publishImeSelectorCustomTile(Landroid/view/inputmethod/InputMethodInfo;)V
 
-    .line 3670
     :goto_1
     return-void
 
-    .line 3673
     .end local v1    # "isIMEVisible":Z
     :cond_2
     const/4 v1, 0x1
@@ -2385,7 +2382,7 @@
 
     .line 3684
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->unpublishImeSelectorCustomTile()V
+    #invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->unpublishImeSelectorCustomTile()V
 
     goto :goto_1
 .end method
@@ -4998,17 +4995,20 @@
 
     if-eqz v7, :cond_5
 
-    :cond_3
-    :goto_1
-    invoke-direct {p0, v2}, Lcom/android/server/InputMethodManagerService;->publishImeSelectorCustomTile(Landroid/view/inputmethod/InputMethodInfo;)V
+
+    #invoke-direct {p0, v2}, Lcom/android/server/InputMethodManagerService;->publishImeSelectorCustomTile(Landroid/view/inputmethod/InputMethodInfo;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .end local v4    # "summary":Ljava/lang/CharSequence;
     .end local v5    # "title":Ljava/lang/CharSequence;
-    :goto_2
+    :cond_3
+    :goto_1
     invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->showFlymeImeSwitcherNotificationIfNeeded()V
 
+    :cond_flyme_0
+
+    :goto_2
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     return-void
@@ -5073,11 +5073,11 @@
     :try_start_2
     iget-boolean v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationShown:Z
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_flyme_0
 
     iget-object v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_flyme_0
 
     iget-object v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -5094,7 +5094,7 @@
     iput-boolean v7, p0, Lcom/android/server/InputMethodManagerService;->mNotificationShown:Z
 
     :cond_7
-    invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->unpublishImeSelectorCustomTile()V
+    #invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->unpublishImeSelectorCustomTile()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

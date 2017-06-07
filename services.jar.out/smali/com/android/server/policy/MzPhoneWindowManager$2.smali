@@ -27,7 +27,6 @@
     .param p1, "this$0"    # Lcom/android/server/policy/MzPhoneWindowManager;
 
     .prologue
-    .line 507
     iput-object p1, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 4
 
     .prologue
-    .line 510
     iget-object v1, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
 
     invoke-static {v1}, Lcom/android/server/policy/MzPhoneWindowManager;->-get1(Lcom/android/server/policy/MzPhoneWindowManager;)Lcom/android/server/policy/PhoneWindowManager;
@@ -54,7 +52,6 @@
 
     move-result v0
 
-    .line 511
     .local v0, "screenOn":Z
     iget-object v1, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
 
@@ -76,7 +73,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 512
     iget-object v1, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
 
     iget-object v2, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
@@ -89,10 +85,8 @@
 
     invoke-static {v1, v2}, Lcom/android/server/policy/MzPhoneWindowManager;->-wrap2(Lcom/android/server/policy/MzPhoneWindowManager;Landroid/content/Context;)Z
 
-    .line 513
     if-nez v0, :cond_0
 
-    .line 514
     iget-object v1, p0, Lcom/android/server/policy/MzPhoneWindowManager$2;->this$0:Lcom/android/server/policy/MzPhoneWindowManager;
 
     invoke-static {v1}, Lcom/android/server/policy/MzPhoneWindowManager;->-get1(Lcom/android/server/policy/MzPhoneWindowManager;)Lcom/android/server/policy/PhoneWindowManager;
@@ -107,7 +101,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/os/PowerManager;->wakeUp(J)V
 
-    .line 509
     :cond_0
     return-void
 .end method

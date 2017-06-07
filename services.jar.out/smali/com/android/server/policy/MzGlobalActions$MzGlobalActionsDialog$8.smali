@@ -27,7 +27,6 @@
     .param p1, "this$1"    # Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     .prologue
-    .line 457
     iput-object p1, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$8;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +40,6 @@
     .locals 2
 
     .prologue
-    .line 460
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$8;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get6(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/os/Handler;
@@ -52,6 +50,5 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 459
     return-void
 .end method

@@ -1755,20 +1755,17 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 2786
     iget-object v3, p0, Lcom/android/server/AlarmManagerService;->mNextAlarmClockForUser:Landroid/util/SparseArray;
 
     invoke-virtual {v3, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
-    .line 2787
     .local v2, "userId":I
     #invoke-direct {p0, v2}, Lcom/android/server/AlarmManagerService;->publishNextAlarmCustomTile(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2785
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
@@ -2758,49 +2755,40 @@
 
     if-eqz v7, :cond_9
 
-    .line 1069
     const/4 v6, -0x1
 
-    .line 1070
     .local v6, "whichBatch":I
     :goto_0
     if-gez v6, :cond_a
 
-    .line 1071
     new-instance v0, Lcom/android/server/AlarmManagerService$Batch;
 
     invoke-direct {v0, p0, p1}, Lcom/android/server/AlarmManagerService$Batch;-><init>(Lcom/android/server/AlarmManagerService;Lcom/android/server/AlarmManagerService$Alarm;)V
 
-    .line 1072
     .local v0, "batch":Lcom/android/server/AlarmManagerService$Batch;
     iget-object v7, p0, Lcom/android/server/AlarmManagerService;->mAlarmBatches:Ljava/util/ArrayList;
 
     invoke-static {v7, v0}, Lcom/android/server/AlarmManagerService;->addBatchLocked(Ljava/util/ArrayList;Lcom/android/server/AlarmManagerService$Batch;)Z
 
-    .line 1083
     :cond_3
     :goto_1
     iget-object v7, p1, Lcom/android/server/AlarmManagerService$Alarm;->alarmClock:Landroid/app/AlarmManager$AlarmClockInfo;
 
     if-eqz v7, :cond_4
 
-    .line 1084
     const/4 v7, 0x1
 
     iput-boolean v7, p0, Lcom/android/server/AlarmManagerService;->mNextAlarmClockMayChange:Z
 
-    .line 1086
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v7
 
     #invoke-direct {p0, v7}, Lcom/android/server/AlarmManagerService;->publishNextAlarmCustomTile(I)V
 
-    .line 1089
     :cond_4
     const/4 v3, 0x0
 
-    .line 1091
     .local v3, "needRebatch":Z
     iget v7, p1, Lcom/android/server/AlarmManagerService$Alarm;->flags:I
 
