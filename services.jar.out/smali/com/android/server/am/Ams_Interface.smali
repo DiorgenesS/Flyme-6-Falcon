@@ -139,12 +139,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 100
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/android/server/am/ProcessRecord;->curSchedGroup:I
 
-    .line 84
     :cond_2
     return-void
 
