@@ -11,6 +11,8 @@
     <string name="mc_custom_date_time_gregorian">Gregoriano</string>
     <string name="mc_custom_date_time_lunar">Lunar</string>
     <string name="mc_date_time_day">d</string>
+    <string name="mc_date_time_hour">h</string>
+    <string name="mc_date_time_min">m</string>
     <string name="mc_date_time_month">m</string>
     <string name="mc_date_time_sec">s</string>
     <string name="mc_date_time_set">Definir</string>
@@ -73,7 +75,6 @@
     <string name="mc_search_icon_input_clear">Limpar</string>
     <string name="mc_search_text">Pesquisar</string>
     <string name="mc_second">s</string>
-    <string name="mc_selectionbutton_all">Todos</string>
     <string name="mc_sunday">D</string>
     <string name="mc_thursday">Q</string>
     <string name="mc_time_picker_leap">Intercalar</string>
@@ -86,8 +87,6 @@
     <string name="mc_working_day">Dias úteis</string>
     <string name="mc_yes">OK</string>
     <string name="more_item_label">Mais</string>
-    <string name="mc_date_time_hour">h</string>
-    <string name="mc_date_time_min">m</string>
     <string name="alwaysUse">Usar esta ação por padrão</string>
     <string name="date_time_set">Definir</string>
     <string name="mz_date_time_day">d</string>
@@ -110,7 +109,7 @@
     <string name="status_bar_settings_powersave">Economia de energia</string>
     <string name="status_bar_settings_rotation">Rotação</string>
     <string name="mobile">Dados móveis</string>
-    <string name="status_bar_settings_screenshot">Capturar tela</string>
+    <string name="status_bar_settings_screenshot">Print</string>
     <string name="status_bar_settings_datasave">Economia de dados</string>
     <string name="status_bar_settings_hotspot">Hotspot</string>
     <string name="status_bar_settings_drivemode">Assistente de direção</string>
@@ -352,7 +351,7 @@ Utilize apenas o carregador fornecido."</string>
     <string name="accessibility_wifi_one_bar">Intensidade do Wi-Fi uma barra</string>
     <string name="accessibility_wifi_two_bars">Duas barras de intensidade Wi-Fi</string>
     <string name="accessibility_wifi_three_bars">Sinal Wi-Fi com três barras</string>
-    <string name="accessibility_wifi_signal_full">Intensidade do Wi-Fi cheia</string>
+    <string name="accessibility_wifi_signal_full">Intensidade do Wi-Fi cheio</string>
     <string name="accessibility_wifi_name">Conectado à %s.</string>
     <string name="accessibility_bluetooth_name">Conectado a %s.</string>
     <string name="accessibility_no_wimax">Não há sinais de WiMAX.</string>
