@@ -1,6 +1,8 @@
 #/bin/bash
 
+PWD=`pwd`
 TARGET_DIR=out/merged_target_files
+GAPPS=$PWD/gapps
 
 echo
 echo ">>> Removing existing directory"
@@ -21,6 +23,14 @@ mv $TARGET_DIR/SYSTEM/priv-app/Browser $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Email $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Music $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Video $TARGET_DIR/DATA/system_data/priv-app
+
+#Added Gapps to ROM
+if [ -e $GAPPS/SYSTEM ]
+then
+   echo ">>> Adding Gapps to ROM"
+   cp -rf $GAPPS/SYSTEM $TARGET_DIR
+   echo ">>> Gapps added"
+fi
 
 #Removed themes not used in the international version
 echo ">>> Goodbye unnecessary files"
