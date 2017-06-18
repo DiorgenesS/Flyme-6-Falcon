@@ -109,7 +109,7 @@ vendor_modify_jars := framework org.cyanogenmod.platform services telephony-comm
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-board_remove_apps := LockScreenFramework LogReport MzInput MzSimContacts NfcNci OperaMax Tag webview
+board_remove_apps := LockScreenFramework LogReport MzInput MzSimContacts NfcNci OneTimeInitializer OperaMax Tag webview
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
