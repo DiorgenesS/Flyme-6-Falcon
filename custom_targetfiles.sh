@@ -21,3 +21,8 @@ mv $TARGET_DIR/SYSTEM/priv-app/Browser $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Email $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Music $TARGET_DIR/DATA/system_data/priv-app
 mv $TARGET_DIR/SYSTEM/priv-app/Video $TARGET_DIR/DATA/system_data/priv-app
+
+#Removed themes not used in the international version
+echo ">>> Goodbye unnecessary files"
+echo
+rm -rf $TARGET_DIR/SYSTEM/customizecenter/theme/mtpks

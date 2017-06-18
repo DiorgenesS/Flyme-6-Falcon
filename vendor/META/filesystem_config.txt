@@ -74,6 +74,8 @@ system/app/LatinIME/LatinIME.apk 0 0 644 selabel=u:object_r:system_file:s0 capab
 system/app/LatinIME/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LatinIME/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LatinIME/lib/arm/libjni_latinime.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/LatinImeGoogle/LatinImeGoogle.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapers 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapers/LiveWallpapers.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LiveWallpapersPicker 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -129,6 +131,8 @@ system/app/UserDictionaryProvider 0 0 755 selabel=u:object_r:system_file:s0 capa
 system/app/UserDictionaryProvider/UserDictionaryProvider.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WallpaperPicker 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WallpaperPicker/WallpaperPicker.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/WebViewGoogle 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/WebViewGoogle/WebViewGoogle.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WAPPushManager 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/WAPPushManager/WAPPushManager.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/webview 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
