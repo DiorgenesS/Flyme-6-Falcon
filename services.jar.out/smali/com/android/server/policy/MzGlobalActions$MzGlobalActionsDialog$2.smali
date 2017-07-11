@@ -24,6 +24,7 @@
     .param p1, "this$1"    # Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     .prologue
+    .line 554
     iput-object p1, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -43,16 +44,18 @@
 
     const/4 v5, 0x1
 
+    .line 557
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
+    .line 566
     .local v0, "action":Ljava/lang/String;
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v3, "android.intent.action.LOCALE_CHANGED"
+    const-string/jumbo v3, "android.intent.action.LOCALE_CHANGED"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -60,6 +63,7 @@
 
     if-eqz v2, :cond_0
 
+    .line 567
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mRestartView:Lcom/android/server/policy/MzCustomCircleButton;
@@ -72,18 +76,22 @@
 
     move-result-object v3
 
+    .line 568
     sget v4, Lcom/flyme/internal/R$string;->global_action_power_restart:I
 
+    .line 567
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/android/server/policy/MzCustomCircleButton;->setText(Ljava/lang/CharSequence;)V
 
+    .line 569
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mShutdownView:Lcom/android/server/policy/MzCustomCircleButton;
 
+    .line 570
     invoke-static {}, Lcom/android/server/policy/MzGlobalActions;->-get3()Landroid/content/Context;
 
     move-result-object v3
@@ -92,16 +100,20 @@
 
     move-result-object v3
 
+    .line 573
     sget v4, Lcom/flyme/internal/R$string;->global_action_shut_down:I
 
+    .line 570
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
+    .line 569
     invoke-virtual {v2, v3}, Lcom/android/server/policy/MzCustomCircleButton;->setText(Ljava/lang/CharSequence;)V
 
+    .line 575
     :cond_0
-    const-string v2, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
+    const-string/jumbo v2, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -109,23 +121,28 @@
 
     if-nez v2, :cond_1
 
-    const-string v2, "android.intent.action.SCREEN_OFF"
+    .line 576
+    const-string/jumbo v2, "android.intent.action.SCREEN_OFF"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
+    .line 575
     if-eqz v2, :cond_2
 
+    .line 578
     :cond_1
-    const-string v2, "reason"
+    const-string/jumbo v2, "reason"
 
+    .line 577
     invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
+    .line 579
     .local v1, "reason":Ljava/lang/String;
-    const-string v2, "globalactions"
+    const-string/jumbo v2, "globalactions"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -133,6 +150,7 @@
 
     if-nez v2, :cond_2
 
+    .line 580
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v2}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get5(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/AnimatorSet;
@@ -145,10 +163,11 @@
 
     if-eqz v2, :cond_4
 
+    .line 584
     .end local v1    # "reason":Ljava/lang/String;
     :cond_2
     :goto_0
-    const-string v2, "com.meizu.font.change"
+    const-string/jumbo v2, "com.meizu.font.change"
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -156,21 +175,25 @@
 
     if-eqz v2, :cond_3
 
+    .line 585
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mRestartView:Lcom/android/server/policy/MzCustomCircleButton;
 
     invoke-virtual {v2, v6, v5}, Lcom/android/server/policy/MzCustomCircleButton;->setTypeface(Landroid/graphics/Typeface;Z)V
 
+    .line 586
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mShutdownView:Lcom/android/server/policy/MzCustomCircleButton;
 
     invoke-virtual {v2, v6, v5}, Lcom/android/server/policy/MzCustomCircleButton;->setTypeface(Landroid/graphics/Typeface;Z)V
 
+    .line 556
     :cond_3
     return-void
 
+    .line 581
     .restart local v1    # "reason":Ljava/lang/String;
     :cond_4
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$2;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
