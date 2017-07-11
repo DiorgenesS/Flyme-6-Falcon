@@ -7862,7 +7862,7 @@
 
     iput-object v0, p0, Landroid/content/res/Resources;->mFlymeThemeResource:Landroid/content/res/flymetheme/FlymeThemeResource;
 
-    iget-object v0, p0, Landinvoke-static {}, Landroid/content/res/flymetheme/FlymeThemeResourceManager;->getInstanceroid/content/res/Resources;->mFlymeThemeResource:Landroid/content/res/flymetheme/FlymeThemeResource;
+    iget-object v0, p0, Landroid/content/res/Resources;->mFlymeThemeResource:Landroid/content/res/flymetheme/FlymeThemeResource;
 
     if-nez v0, :cond_2
 
